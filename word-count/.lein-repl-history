@@ -1,0 +1,27 @@
+(ns phrase)
+(require '[clojure.string :as string])
+(defn- words [text]
+(re-seq #"\w+" text))
+(words "hello world")
+(defn- normalize [text]
+(string/lower-case text))
+(normalize (words "Hello World !"))
+(words "Hello World !")
+(defn word-count [text]
+  (-> text
+      normalize
+      words
+frequencies))
+(word-count "Hello World !")
+(word-count "Hello hello World !")
+(frequencies "Hello hello World !")
+(frequencies (words ("Hello hello World !"))
+)
+(frequencies (words ("Hello hello World !"))
+)
+(frequencies (words ("Hello hello World !")))
+(frequencies (1 2 3))
+(frequencies [1 2 3])
+(frequencies [1 2 3 3])
+(word-count "testing, 1, 2 testing")
+(exit)
