@@ -30,3 +30,17 @@
     (if (pos? n)
       (= n (reduce + (map #(int (Math/pow % (get-number-of-digits n))) (get-digits n))))
       false)))
+
+; (defn generate-armstrong-numbers
+;   "generate armstrong numbers for ranges of ints greater than 0 defined by from and to"
+;   [^Integer from, ^Integer to]
+;   {:pre [(some? from) (integer? from) (some? to) (integer? to) ]}
+;   (if (< from to)
+;     (into [] (for [x (range from to)
+;                    :when (true? (armstrong? x))]
+;                x))
+;      []))
+
+; (defn -main
+;   []
+;   (println (str "armstrong numbers between 100 and 1000: " (generate-armstrong-numbers 100 1000)))  )
