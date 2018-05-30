@@ -1,0 +1,5 @@
+
+lein test beer-song-test
+
+Ran 2 tests containing 6 assertions.
+0 failures, 0 errors.
