@@ -1,6 +1,7 @@
-./../target/
-./../target/*
+/target/
+/../target/
+/../target/*
 
-./../.lein-failures
-./../.lein-repl-history
-./../.nrepl-port
+/../.lein-failures
+/../.lein-repl-history
+/../.nrepl-port
