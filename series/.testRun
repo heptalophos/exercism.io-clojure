@@ -1,0 +1,5 @@
+
+lein test series-test
+
+Ran 5 tests containing 5 assertions.
+0 failures, 0 errors.
