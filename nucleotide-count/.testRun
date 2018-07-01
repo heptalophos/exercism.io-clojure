@@ -1,0 +1,5 @@
+
+lein test nucleotide-count-test
+
+Ran 7 tests containing 7 assertions.
+0 failures, 0 errors.
