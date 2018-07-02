@@ -1,0 +1,5 @@
+
+lein test hamming-test
+
+Ran 6 tests containing 7 assertions.
+0 failures, 0 errors.
