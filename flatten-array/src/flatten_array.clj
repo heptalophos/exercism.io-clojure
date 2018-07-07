@@ -1,5 +1,10 @@
-(ns flatten-array)
+(ns flatten-array
+  (:refer-clojure :exclude [flatten]))
 
-(defn flatten [arr] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn flatten 
+  [arr]
+  (->>
+   arr 
+   (tree-seq sequential? seq)
+   (filter (complement sequential?)) 
+   (remove nil?)))
