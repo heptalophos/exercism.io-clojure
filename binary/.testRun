@@ -1,0 +1,5 @@
+
+lein test binary-test
+
+Ran 8 tests containing 8 assertions.
+0 failures, 0 errors.

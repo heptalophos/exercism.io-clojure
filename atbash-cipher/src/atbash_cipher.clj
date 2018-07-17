@@ -7,7 +7,6 @@
         (merge
         (zipmap numeric numeric)
         (zipmap alpha (reverse alpha)))))
-                        
 
 (defn encode 
     [plain] 
