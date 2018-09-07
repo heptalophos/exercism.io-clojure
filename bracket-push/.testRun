@@ -1,0 +1,5 @@
+
+lein test bracket-push-test
+
+Ran 13 tests containing 13 assertions.
+0 failures, 0 errors.
