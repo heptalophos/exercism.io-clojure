@@ -1,14 +1,16 @@
 (ns all-your-base)
 
 (defn- digs->dec [digits base]
-    (loop [n 0 dig digits]
-      (if (empty? digits) n (recur (+ (first dig) (* base n)) (rest dig)))))
+    (loop [n 0 d digits]
+      (if (empty? d) 
+     	  n 
+		  (recur (+ (first d) (* base n)) (rest d)))))
 
 (defn- dec->digs [num base]
-    (loop [digits [] cur num]
+    (loop [ds [] cur num]
         (if (zero? cur) 
-            (if (empty? digits ) '(0) digits)
-            (recur (cons (mod cur base) digits)
+            (if (empty? ds ) '(0) ds)
+            (recur (cons (mod cur base) ds)
                    (quot cur base)))))
 
 (defn convert [inbase num outbase] 
