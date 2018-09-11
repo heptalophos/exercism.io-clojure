@@ -5,6 +5,8 @@
 .lein-failures
 .lein-repl-history
 .nrepl-port
+.idea/
+*.iml
 /../.lein-failures
 /../.lein-repl-history
 /../.nrepl-port
