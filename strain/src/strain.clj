@@ -1,8 +1,7 @@
 (ns strain)
 
-(defn retain [] 
-      )
+(defn retain [pred xs]
+      (for [x xs :when (pred x)] x))
 
-(defn discard [] ;; <- arglist goes here
-  ;; your code goes here
-  )
+(defn discard [pred xs]
+      (retain #(not (pred %)) xs))
