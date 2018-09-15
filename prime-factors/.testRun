@@ -1,0 +1,5 @@
+
+lein test prime-factors-test
+
+Ran 11 tests containing 11 assertions.
+0 failures, 0 errors.
