@@ -1,0 +1,5 @@
+
+lein test two-fer-test
+
+Ran 3 tests containing 3 assertions.
+0 failures, 0 errors.
