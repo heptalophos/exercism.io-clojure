@@ -1,0 +1,14 @@
+
+lein test pangram-test
+
+Ran 9 tests containing 9 assertions.
+0 failures, 0 errors.
+
+
+
+lein test pangram-test
+
+Ran 9 tests containing 9 assertions.
+0 failures, 0 errors.
+
+
