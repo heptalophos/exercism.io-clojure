@@ -13,6 +13,5 @@
            (reduce +))
       0))
 
-;;; -- or -- 
 ; (defn hex-to-int [hex]
 ;   (if (every? digits hex) (reduce #(+ (* % 16) %2) 0 (map digits (clojure.string/lower-case hex))) 0))
