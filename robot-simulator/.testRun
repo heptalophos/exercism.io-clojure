@@ -1,0 +1,5 @@
+
+lein test robot-simulator-test
+
+Ran 6 tests containing 12 assertions.
+0 failures, 0 errors.
