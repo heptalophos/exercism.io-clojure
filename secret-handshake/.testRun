@@ -1,0 +1,5 @@
+
+lein test secret-handshake-test
+
+Ran 12 tests containing 12 assertions.
+0 failures, 0 errors.
