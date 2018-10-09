@@ -1,5 +1,0 @@
-
-lein test all-your-base-test
-
-Ran 21 tests containing 21 assertions.
-0 failures, 0 errors.
