@@ -1,0 +1,6 @@
+> lein test
+
+lein test allergies-test
+
+Ran 12 tests containing 14 assertions.
+0 failures, 0 errors.
