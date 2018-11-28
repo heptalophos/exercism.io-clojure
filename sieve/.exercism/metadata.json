@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"sieve","id":"fde7500f16a44e1097c61c6a31507d12","url":"https://exercism.io/my/solutions/fde7500f16a44e1097c61c6a31507d12","handle":"zerodelta","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "sieve",
+    "id": "fde7500f16a44e1097c61c6a31507d12",
+    "url": "https://exercism.io/my/solutions/fde7500f16a44e1097c61c6a31507d12",
+    "handle": "zerodelta",
+    "is_requester": true,
+    "auto_approve": false
+}
