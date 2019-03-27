@@ -1,0 +1,5 @@
+
+lein test trinary-test
+
+Ran 10 tests containing 10 assertions.
+0 failures, 0 errors.
