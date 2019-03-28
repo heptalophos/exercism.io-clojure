@@ -1,8 +1,10 @@
 (ns octal)
 
-(defn to-decimal 
-    [oct-str] 
-    (if (re-matches #"[0-7]+" oct-str)
-      (apply + 
-        (map-indexed (fn [idx digit] (bit-shift-left (Character/getNumericValue digit) (* 3 idx))) (reverse oct-str)))
-       0))
+(defn to-decimal
+  [input]
+  (if (re-matches #"[0-7]+" input)
+    (->> (reverse input)
+         (map #(Character/getNumericValue %1))
+         (map * (iterate (partial * 8) 1))
+         (reduce + 0))
+    0))
