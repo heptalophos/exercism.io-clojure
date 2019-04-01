@@ -10,5 +10,4 @@
 /../.lein-failures
 /../.lein-repl-history
 /../.nrepl-port
-# /../.solution.json
-/.vscode/
+.vscode/
