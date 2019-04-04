@@ -1,0 +1,4 @@
+lein test wordy-test
+
+Ran 16 tests containing 16 assertions.
+0 failures, 0 errors.
