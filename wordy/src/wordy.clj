@@ -17,7 +17,8 @@
 ;;- An alternative strategy, would be to treat an expression as a list of tokens, for example: 
 ;;- '(a + b - c * d / e), partition its tail into a list of 2 item lists (<operation> <operand>)
 ;;- like: (partition 2 (rest '(a + b - c * d / e))) => ((+ b) (- c) (* d) (/ e)) and then use 
-;;- reduce to evaluate the list.
+;;- reduce with the list, starting the acc with a and evaluating succesively the expressions formed (acc + b);
+;;- (acc - c); (acc * d) .. et.c.
 (defn- calculate [x & expr]
   (reduce (fn [acc [op y]] (op acc y)) x (partition 2 expr)))
 
