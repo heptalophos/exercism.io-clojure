@@ -1,29 +1,28 @@
 (ns binary-search-tree)
 
-(defn value [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn value [node]
+  (:value node ))
 
-(defn singleton [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn left [node]
+  (:left node))
 
-(defn insert [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn right [node]
+  (:right node))
 
-(defn left [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn singleton [value] 
+  {:value value nil nil} )
 
-(defn right [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn insert [val node]
+  (cond (nil? node) (singleton val)
+        (<= val (value node)) (assoc node :left (insert val (left node)))
+        (> val (value node)) (assoc node :right (insert val (right node)))
+        :else node ))
 
-(defn to-list [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn to-list [tree]
+  (if (nil? tree)
+    []
+    (concat 
+     (to-list (left tree)) [(value tree)] (to-list (right tree)) ) ))
 
-(defn from-list [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn from-list [values] 
+  (reduce (fn [acc val] (insert val acc)) nil values))
