@@ -1,0 +1,6 @@
+>lein test
+
+lein test rotational-cipher-test
+
+Ran 1 tests containing 14 assertions.
+0 failures, 0 errors.

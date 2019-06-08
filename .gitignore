@@ -1,4 +1,6 @@
-/target/
+.vscode/
+/../settings.*
+target/
 /../target/
 /../target/*
 /*/target/
@@ -11,5 +13,4 @@
 /../.lein-repl-history
 /../.nrepl-port
 # /../.solution.json
-/.vscode/
 cleanup.*
