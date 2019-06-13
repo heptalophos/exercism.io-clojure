@@ -1,11 +1,16 @@
 (ns pig-latin)
 
+(def pattern-v #"([aeiou]|xr|yt).+")
+(def pattern-c #"(s?qu|[^aeiou]+)(.+)")
+
 (defn pig-latinize 
     [word]
     (cond 
-        (re-matches #"([aeiou]|xr|yt).+" word) (str word "ay")
-        (re-matches #"(s?qu|[^aeiou]+)(.+)"  word) 
-            (clojure.string/replace word #"(s?qu|[^aeiou]+)(.+)" "$2$1ay")))
+        (re-matches pattern-v word) 
+            (str word "ay")
+        (re-matches pattern-c  word) 
+            (clojure.string/replace word pattern-c "$2$1ay")
+        :else ""))
 
 (defn translate 
     [phrase]
