@@ -1,5 +1,15 @@
+=======================================
 
 lein test protein-translation-test
 
 Ran 11 tests containing 20 assertions.
 0 failures, 0 errors.
+
+=======================================
+
+lein test protein-translation-test
+
+Ran 11 tests containing 20 assertions.
+0 failures, 0 errors.
+
+=======================================
