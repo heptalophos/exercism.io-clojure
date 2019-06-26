@@ -3,7 +3,7 @@
 
 (defn- premises
     [[wanted lost]]
-    (str "For want of a " wanted " the " lost " was lost." ))
+    (str "For want of a " wanted " the " lost " was lost.\n" ))
 
 
 (defn- conclusion
@@ -16,5 +16,5 @@
     (let [ prologue (mapv premises (partition 2 1 things))
            epilogue (conclusion (first things)) ]
     (cond (empty? things) ""
-          :else (->> (#(interpose "\n" %) (conj prologue epilogue))
+          :else (->> (concat prologue epilogue)
                      (apply str)))))
