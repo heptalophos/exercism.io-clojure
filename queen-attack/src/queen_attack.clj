@@ -18,7 +18,8 @@
         (set-queen b "B")
         (->> (map (partial interpose " ")))
         (interleave (repeat "\n"))
-        (->> (apply concat) (apply str))))
+        (->> (apply concat) 
+             (apply str))))
 
 
 (defn can-attack 
