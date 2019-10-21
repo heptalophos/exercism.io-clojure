@@ -10,3 +10,11 @@ lein test queen-attack-test
 
 Ran 3 tests containing 8 assertions.
 0 failures, 0 errors.
+
+
+
+
+lein test queen-attack-test
+
+Ran 3 tests containing 8 assertions.
+0 failures, 0 errors.
