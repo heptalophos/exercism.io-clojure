@@ -9,7 +9,6 @@ from the front of B and 0 or more elements from the back of B you get a list
 that's completely equal to A.
 
 Examples:
-
  * A = [1, 2, 3], B = [1, 2, 3, 4, 5], A is a sublist of B
  * A = [3, 4, 5], B = [1, 2, 3, 4, 5], A is a sublist of B
  * A = [3, 4], B = [1, 2, 3, 4, 5], A is a sublist of B
