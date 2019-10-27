@@ -11,4 +11,4 @@
       (cond
         (= sum n) :perfect
         (> sum n) :abundant
-        :else :deficient)) 
+        :else :deficient))
