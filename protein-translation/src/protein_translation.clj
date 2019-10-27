@@ -19,8 +19,7 @@
 (defn translate-rna 
     [rna]
     (->> rna
-         (partition 3) 
-         (map #(apply str %))
+         (re-seq #"...")
          (map translate-codon)
          (take-while #(not= "STOP" %))
     ))
