@@ -2,9 +2,9 @@
   (:refer-clojure :exclude [flatten]))
 
 (defn flatten 
-  [arr]
+  [array]
   (->>
-   arr 
+   array 
    (tree-seq sequential? seq)
    (filter (complement sequential?)) 
    (remove nil?)))

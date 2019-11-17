@@ -3,3 +3,11 @@ lein test etl-test
 
 Ran 4 tests containing 4 assertions.
 0 failures, 0 errors.
+
+
+
+
+lein test etl-test
+
+Ran 4 tests containing 4 assertions.
+0 failures, 0 errors.
