@@ -1,9 +1,9 @@
 {
-    "track": "clojure",
-    "exercise": "sublist",
-    "id": "cddc32ac069c4b58820c68356ff674f0",
-    "url": "https://exercism.io/tracks/clojure/exercises/sublist/solutions/cddc32ac069c4b58820c68356ff674f0",
-    "handle": "zerodelta",
-    "is_requester": true,
-    "auto_approve": false
+  "track": "clojure",
+  "exercise": "sublist",
+  "id": "cddc32ac069c4b58820c68356ff674f0",
+  "url": "https://exercism.io/tracks/clojure/exercises/sublist/solutions/cddc32ac069c4b58820c68356ff674f0",
+  "handle": "zerodelta",
+  "is_requester": true,
+  "auto_approve": false
 }
