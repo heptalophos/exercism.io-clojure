@@ -2,11 +2,13 @@
 
 (defn- factors 
       [n]
-      (for [x (range 2 (inc (quot n 2))) :when (zero? (rem n x))] x))
+      (for [x (range 2 (inc (quot n 2))) 
+            :when (zero? (rem n x))] 
+       x))
 
 (defn classify 
       [n]
-      (when (neg? n) (throw (IllegalArgumentException. "Invalid Argument!")))
+      (when (neg? n) (throw (IllegalArgumentException.)))
       (def sum (reduce + 1 (factors n)))
       (cond
         (= sum n) :perfect
