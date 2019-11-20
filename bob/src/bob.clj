@@ -1,15 +1,16 @@
 (ns bob
-  (:require [clojure.string :as string]))
+  (:require [clojure.string :refer [trim]]))
 
 (defn question? [in]
   (= (last in) \?))
 
 (defn silent? [in]
-  (empty? (string/trim in)))
+  (empty? (trim in)))
 
 (defn yell? [in]
   (let [clean-in (apply str (re-seq #"[a-zA-Z]" in))]
-    (and (not-empty clean-in) (re-matches #"\p{Upper}+" clean-in))))
+    (and (not-empty clean-in) 
+         (re-matches #"\p{Upper}+" clean-in))))
 
 (defn response-for [in]
   (cond
