@@ -2,7 +2,10 @@
 
 (defn- divides?
   [divisor n]
-  (if (== 0 (mod n divisor)) true false))
+  (if 
+    (== 0 (mod n divisor)) 
+    true 
+    false))
 
 (defn leap-year? 
   [year] 
