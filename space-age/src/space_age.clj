@@ -2,37 +2,37 @@
 
 (def earth-period 31557600)
 
-(defn age [seconds planet-factor]
+(defn planet-year [seconds orbital-period]
   (-> (/ seconds earth-period)
-      (/ planet-factor)))
+      (/ orbital-period)))
 
 (defn on-mercury 
   [seconds] 
-  (age seconds 0.2408467))
+  (planet-year seconds 0.2408467))
 
 (defn on-venus 
   [seconds] 
-  (age seconds 0.61519726))
+  (planet-year seconds 0.61519726))
 
 (defn on-earth 
   [seconds] 
-  (age seconds 1))
+  (planet-year seconds 1))
 
 (defn on-mars 
   [seconds] 
-  (age seconds 1.8808158 ))
+  (planet-year seconds 1.8808158 ))
 
 (defn on-jupiter 
   [seconds] 
-  (age seconds 11.862615 ))
+  (planet-year seconds 11.862615 ))
 
 (defn on-saturn 
   [seconds] 
-  (age seconds 29.447498 ))
+  (planet-year seconds 29.447498 ))
 
 (defn on-uranus [seconds]
-  (age seconds 84.016846))
+  (planet-year seconds 84.016846))
 
 (defn on-neptune 
   [seconds] 
-  (age seconds 164.79132 ))
+  (planet-year seconds 164.79132 ))
