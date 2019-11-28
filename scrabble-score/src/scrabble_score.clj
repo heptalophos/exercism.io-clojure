@@ -1,4 +1,5 @@
-(ns scrabble-score)
+(ns scrabble-score
+  (:require [clojure.string :refer [upper-case]]))
 
 (def values { 1 "AEIOULNRST"
               2 "DG"
@@ -13,14 +14,13 @@
   (into {} (for [[value letters] values letter letters]
                   [letter value])))
 
-(defn score-letter [letter]
+(defn score-letter 
+  [letter]
   (get scores letter 1))
 
-; (defn score-word [word]
-;   (reduce + (map scores (clojure.string/upper-case word))))
-
-(defn score-word [word]
+(defn score-word 
+  [word]
   (->> word
-       clojure.string/upper-case
+       upper-case
        (map scores)
        (reduce +)))
