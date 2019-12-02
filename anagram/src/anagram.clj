@@ -1,19 +1,22 @@
 (ns anagram 
-  (:require [clojure.string :refer [join lower-case upper-case]]))
+  (:require [clojure.string 
+             :refer [join 
+                     lower-case 
+                     upper-case]]))
 
-(defn string-sort 
+(defn- string-sort 
   "Sort a string"
   [w]
   (join "" (map str (sort (seq (lower-case w)))))
 )
 
-(defn anagram? 
+(defn- anagram? 
   "compute if candidate is anagram of word"
   [word cand]
   (= word (string-sort cand))
 )
 
-(defn not-same? 
+(defn- not-same? 
   "compute if candidate is not the same as the word"
   [word cand]
   (not= word cand)  
@@ -33,4 +36,4 @@
     #(and (anagram? sorted-anagram %)
           (not-same? anagram %)
           (not-capital? anagram %))
-  word-list) ))
+    word-list) ))
