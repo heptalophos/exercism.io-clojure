@@ -1,11 +1,20 @@
 (ns word-count)
-(require '[clojure.string :as str])
+(require '[clojure.string :refer [lower-case]])
 
-(defn- words[input] ;; create sequence of words out of input string excluding non-alphanumeric characters
+;; create sequence of words out of input string excluding non-alphanumeric characters
+(defn- words 
+  [input] 
   (re-seq #"\w+" input))
 
-(defn- normal [input] ;; and normalise individual words (all letters lowercase)
-  (str/lower-case input))
+;; and normalise individual words (all letters lowercase)
+(defn- normalized 
+  [input] 
+  (lower-case input))
 
-(defn word-count [input] ;; and then count their occurence frequency in the sequence
-  ( -> input normal words frequencies ))
+;; and then count their occurence frequency in the sequence
+(defn word-count 
+  [input] 
+  (-> input 
+      normalized
+      words
+      frequencies))
