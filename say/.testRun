@@ -8,3 +8,12 @@ lein test say-test
 
 Ran 15 tests containing 15 assertions.
 0 failures, 0 errors.
+
+
+>lein test
+
+Testing say-test
+
+Ran 15 tests containing 15 assertions.
+0 failures, 0 errors.
+{:test 15, :pass 15, :fail 0, :error 0, :type :summary}
