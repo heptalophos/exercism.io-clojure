@@ -33,7 +33,6 @@
   (let [absc (abs c)]
     (/ n (* absc absc))))
 
-
 (defn div [[a b] [c d]] 
   (->> (conjugate [c d])
        (mul [a b])
