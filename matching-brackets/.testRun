@@ -1,0 +1,11 @@
+>lein repl
+
+user=> (require 'matching-brackets-test)
+nil
+user=> (clojure.test/run-tests 'matching-brackets-test)
+
+Testing matching-brackets-test
+
+Ran 13 tests containing 13 assertions.
+0 failures, 0 errors.
+{:test 13, :pass 13, :fail 0, :error 0, :type :summary}
