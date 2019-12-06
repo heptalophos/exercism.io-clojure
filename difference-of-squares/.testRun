@@ -3,3 +3,16 @@ lein test difference-of-squares-test
 
 Ran 9 tests containing 9 assertions.
 0 failures, 0 errors.
+
+
+
+>lein repl
+user=> (require 'difference-of-squares-test)
+nil
+user=> (clojure.test/run-tests 'difference-of-squares-test)
+
+Testing difference-of-squares-test
+
+Ran 9 tests containing 9 assertions.
+0 failures, 0 errors.
+{:test 9, :pass 9, :fail 0, :error 0, :type :summary}
