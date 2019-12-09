@@ -1,5 +1,6 @@
 .vscode/
-/../settings.*
+.ionide/
+/*/settings.json
 target/
 /../target/
 /../target/*
