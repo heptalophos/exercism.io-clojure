@@ -1,10 +1,12 @@
-(ns pangram)
+(ns pangram
+  (:require [clojure.string :refer [lower-case]]))
 
-(defn pangram? [word]
+(defn pangram? 
+  [word]
   (->> word
-       clojure.string/lower-case
-      (filter #(and (<= (int \a) (int %)) 
-                    (>= (int \z) (int %))))
+       lower-case
+       (filter #(and (<= (int \a) (int %)) 
+                     (>= (int \z) (int %))))
        distinct
        count
        (= 26)))
