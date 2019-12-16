@@ -1,10 +1,11 @@
-.vscode/
+.vscode
+.vscode/*
 .ionide/
-/*/settings.json
+!/../settings.json
 target/
 /../target/
 /../target/*
-/*/target/
+# /*/target/
 .lein-failures
 .lein-repl-history
 .nrepl-port
