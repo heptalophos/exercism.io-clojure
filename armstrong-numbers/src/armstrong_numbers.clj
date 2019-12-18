@@ -4,17 +4,17 @@
   "Returns the (integer) nth-power of x"
   [x n] 
   (->> x
-    (repeat n)
-    (reduce *)))
+       (repeat n)
+       (reduce *)))
 
 (defn armstrong?
   "Checks if num is an armstrong 
    (or narcissistic) number"
   [num]
   (->> num
-     (str)
-     (seq)
-     (map #(Character/digit % 10))
-     (map #(** % (count (str num))))
-     (reduce +)
-     (= num)))
+       (str)
+       (seq)
+       (map #(Character/digit % 10))
+       (map #(** % (count (str num))))
+       (reduce +)
+       (= num)))
