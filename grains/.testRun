@@ -11,3 +11,17 @@ lein test grains-test
 Ran 8 tests containing 8 assertions.
 0 failures, 0 errors.
 {:test 8, :pass 8, :fail 0, :error 0, :type :summary}
+
+
+
+> lein repl 
+
+user=> (require 'grains-test)
+nil
+user=> (clojure.test/run-tests 'grains-test)
+
+Testing grains-test
+
+Ran 8 tests containing 8 assertions.
+0 failures, 0 errors.
+{:test 8, :pass 8, :fail 0, :error 0, :type :summary}
