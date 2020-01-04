@@ -23,7 +23,6 @@
                  (conclusion n) 
                  (premise (- n 1))))
 
-
 (defn sing
   "Given a start and an optional end, returns all verses in this interval. 
   If end is not given, the whole song from start is sung."
