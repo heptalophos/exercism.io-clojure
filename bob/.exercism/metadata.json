@@ -1,9 +1,9 @@
 {
-    "track": "clojure",
-    "exercise": "bob",
-    "id": "7557ca674add42578d68f0f612235f22",
-    "url": "https://exercism.io/tracks/clojure/exercises/bob/solutions/7557ca674add42578d68f0f612235f22",
-    "handle": "zerodelta",
-    "is_requester": true,
-    "auto_approve": false
+  "track": "clojure",
+  "exercise": "bob",
+  "id": "7557ca674add42578d68f0f612235f22",
+  "url": "https://exercism.io/tracks/clojure/exercises/bob/solutions/7557ca674add42578d68f0f612235f22",
+  "handle": "zerodelta",
+  "is_requester": true,
+  "auto_approve": false
 }
