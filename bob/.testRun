@@ -5,9 +5,16 @@ Ran 14 tests containing 14 assertions.
 0 failures, 0 errors.
 
 
-
-
 lein test bob-test
 
 Ran 14 tests containing 14 assertions.
+0 failures, 0 errors.
+
+
+
+>lein test
+
+lein test bob-test
+
+Ran 25 tests containing 25 assertions.
 0 failures, 0 errors.
