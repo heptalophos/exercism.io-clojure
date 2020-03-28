@@ -2,7 +2,7 @@
   (:require [clojure.string :refer [trim]]))
 
 (defn question? [in]
-  (= (last in) \?))
+  (= (last (trim in)) \?))
 
 (defn silent? [in]
   (empty? (trim in)))
@@ -14,7 +14,13 @@
 
 (defn response-for [in]
   (cond
-    (silent? in) "Fine. Be that way!"
-    (yell? in) "Whoa, chill out!"
-    (question? in) "Sure."
-    :default "Whatever."))
+    (and (yell? in) (question? in)) 
+        "Calm down, I know what I'm doing!"
+    (silent? in) 
+        "Fine. Be that way!"
+    (yell? in) 
+        "Whoa, chill out!"
+    (question? in) 
+      "Sure."
+    :default 
+        "Whatever."))
