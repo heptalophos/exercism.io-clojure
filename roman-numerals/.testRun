@@ -3,3 +3,32 @@ lein test roman-numerals-test
 
 Ran 18 tests containing 18 assertions.
 0 failures, 0 errors.
+
+
+
+>lein repl
+
+nREPL server started on port 51929 on host 127.0.0.1 - nrepl://127.0.0.1:51929
+REPL-y 0.3.7, nREPL 0.2.12
+Clojure 1.9.0
+Java HotSpot(TM) 64-Bit Server VM 1.8.0_241-b07
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+
+=> (require 'roman-numerals-test)
+nil
+
+=> (clojure.test/run-tests 'roman-numerals-test)
+
+Testing roman-numerals-test
+
+Ran 18 tests containing 18 assertions.
+
+0 failures, 0 errors.
+{:test 18, :pass 18, :fail 0, :error 0, :type :summary} 
+
+=> Bye for now!
