@@ -5,5 +5,9 @@
     [""]
     (loop [string string, acc []]
       (if (< (count string) n)
-        acc
-        (recur (rest string) (conj acc (apply str (take n string))))))))
+       acc
+       (recur (rest string) 
+              (conj acc 
+                   (apply str 
+                         (take n string))))
+))))
