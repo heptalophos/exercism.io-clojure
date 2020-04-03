@@ -7,10 +7,13 @@
       (reduce
           (fn [stack item]
               (cond
-                  (#{ \( \{ \[ } item) (conj stack item)
+                  (#{ \( \{ \[ } item) 
+                    (conj stack item)
                   (and (#{ \( \{ \[ } (last stack))
-                       (= ({ \) \(, \} \{, \] \[ } item) (last stack)))
-                  (pop stack)
-                  :else (conj stack item)))
-      [])
-  empty?))
+                       (= ({ \) \(, \} \{, \] \[ } item) 
+                       (last stack)))
+                    (pop stack)
+                  :else 
+                    (conj stack item)))
+          [])
+      empty?))
