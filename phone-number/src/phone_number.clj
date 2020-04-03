@@ -17,6 +17,6 @@
 
 (defn pretty-print [num-string] 
   (let [number (number num-string)]
-    (format "(%s) %s-%s" (subs number 0 3) 
+    (format "(%s) %s-%s" (area-code num-string) 
                          (subs number 3 6) 
                          (subs number 6))))
