@@ -7,9 +7,9 @@
             (Character/isLetter ch) 
             ;; only rotates alpha characters
                 (let [base 
-                        (cond (Character/isUpperCase ch) 
+                      (cond (Character/isUpperCase ch) 
                                 (int \A) 
-                              :else 
+                            :else 
                                 (int \a))]
                 (char (+ base 
                          (mod (+ (- (int ch) base) 
