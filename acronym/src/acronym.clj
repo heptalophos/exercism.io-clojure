@@ -1,8 +1,11 @@
-(ns acronym)
+(ns acronym
+    (:require [clojure.string 
+               :refer [join upper-case]]))
 
-(defn acronym [words] 
+(defn acronym 
+    [words] 
     (->> words 
          (re-seq #"\p{Upper}*\p{Lower}*")
          (map first)
-         (clojure.string/join)
-         (clojure.string/upper-case)))
+         (join)
+         (upper-case)))
