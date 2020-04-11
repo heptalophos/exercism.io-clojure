@@ -1,5 +1,8 @@
 (ns atbash-cipher
-  (:require [clojure.string :refer [join lower-case replace]]))
+  (:require [clojure.string 
+             :refer [join 
+                     lower-case 
+                     replace]]))
 
 (def encipher 
   (let [alpha "abcdefghijklmnopqrstuvwxyz"
@@ -7,6 +10,7 @@
         (merge
         (zipmap numeric numeric)
         (zipmap alpha (reverse alpha)))))
+                        
 
 (defn encode 
     [plain] 
