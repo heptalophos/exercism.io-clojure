@@ -8,6 +8,7 @@
 (deftest two
   (is (= [2] (prime-factors/of 2))))
 
+
 (deftest three
   (is (= [3] (prime-factors/of 3))))
 
