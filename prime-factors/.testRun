@@ -3,3 +3,17 @@ lein test prime-factors-test
 
 Ran 11 tests containing 11 assertions.
 0 failures, 0 errors.
+
+
+
+>lein repl
+
+=> (require 'prime-factors-test)
+
+=> (clojure.test/run-tests 'prime-factors-test)
+
+Testing prime-factors-test
+
+Ran 11 tests containing 11 assertions.
+0 failures, 0 errors.
+{:test 11, :pass 11, :fail 0, :error 0, :type :summary}
