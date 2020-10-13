@@ -1,6 +1,7 @@
 (ns prime-factors)
 
-(defn of [n] 
+(defn of 
+  [n] 
   (loop [n n divisor 2 factors []]
     (if (< n 2)
       factors
