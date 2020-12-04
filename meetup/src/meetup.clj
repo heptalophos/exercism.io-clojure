@@ -1,7 +1,13 @@
 (ns meetup
     (:import (java.util Calendar)))
 
-(def days-of-the-week {:monday 2 :tuesday 3 :wednesday 4 :thursday 5 :friday 6 :saturday 7 :sunday 1})
+(def days-of-the-week {:monday 2 
+                       :tuesday 3 
+                       :wednesday 4 
+                       :thursday 5 
+                       :friday 6 
+                       :saturday 7 
+                       :sunday 1})
 
 (defn start-of-week
   [month wk]
@@ -30,7 +36,9 @@
 
 (defn calculate-day
   [year month week-start day-in-week]
-  (+ week-start (days-offset (day-of-week year month week-start) day-in-week)))
+  (+ week-start 
+     (days-offset 
+          (day-of-week year month week-start) day-in-week)))
     
 (defn meetup 
   [month year day-in-week week] 
