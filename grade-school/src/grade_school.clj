@@ -9,8 +9,7 @@
     (merge school 
            {in-grade (conj 
                       (grade school in-grade) 
-                      name)}
-    ))
+                      name)}))
 
 (defn sorted 
     [school] 
