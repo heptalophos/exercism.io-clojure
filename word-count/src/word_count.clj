@@ -1,7 +1,8 @@
 (ns word-count)
 (require '[clojure.string :refer [lower-case]])
 
-;; create sequence of words out of input string excluding non-alphanumeric characters
+;; create sequence of words out of input string 
+;; excluding non-alphanumeric characters
 (defn- words 
   [input] 
   (re-seq #"\w+" input))
