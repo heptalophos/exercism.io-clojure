@@ -8,7 +8,6 @@ Ran 12 tests containing 12 assertions.
 
 >lein repl
 
-nREPL server started on port 50178 on host 127.0.0.1 - nrepl://127.0.0.1:50178
 REPL-y 0.3.7, nREPL 0.2.12
 Clojure 1.10.0
 Java HotSpot(TM) 64-Bit Server VM 1.8.0_241-b07
@@ -30,4 +29,28 @@ Ran 12 tests containing 12 assertions.
 0 failures, 0 errors.
 {:test 12, :pass 12, :fail 0, :error 0, :type :summary}
 
+=> Bye for now!
+
+
+>lein repl
+
+REPL-y 0.3.7, nREPL 0.2.12
+Clojure 1.10.0
+Java HotSpot(TM) 64-Bit Server VM 14.0.1+7
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+
+=> (require 'phone-number-test)
+nil
+=> (clojure.test/run-tests 'phone-number-test)
+
+Testing phone-number-test
+
+Ran 17 tests containing 17 assertions.
+0 failures, 0 errors.
+{:test 17, :pass 17, :fail 0, :error 0, :type :summary}
 => Bye for now!
