@@ -7,7 +7,12 @@
     (cond 
       (and (= 11 length) (= \1 (first ph))) 
         (subs ph 1)
-      (= 10 length) 
+      (and 
+        (= 10 length)
+        (and (not= \0 (first (subs ph 0 3))) 
+             (not= \1 (first (subs ph 0 3)))) 
+        (and (not= \0 (first (subs ph 3 6))) 
+             (not= \1 (first (subs ph 3 6))))) 
         ph 
       :else 
         "0000000000" )))
