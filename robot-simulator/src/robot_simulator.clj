@@ -23,11 +23,15 @@
     \L (update robot :bearing turn-left)
     \R (update robot :bearing turn-right)
     \A (case (:bearing robot)
-         :north (update-in robot [:coordinates :y] inc)
-         :east  (update-in robot [:coordinates :x] inc)
-         :south (update-in robot [:coordinates :y] dec)
-         :west  (update-in robot [:coordinates :x] dec))
-    :else nil))
+         :north (update-in robot 
+                           [:coordinates :y] inc)
+         :east  (update-in robot 
+                           [:coordinates :x] inc) 
+         :south (update-in robot 
+                           [:coordinates :y] dec)
+         :west  (update-in robot 
+                           [:coordinates :x] dec))
+         :else nil))
 
 (defn simulate [commands robot]
     (reduce instruct robot commands))
