@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"robot-simulator","id":"f4d92580ad914a4ba4d58646f699e0e7","url":"https://exercism.io/my/solutions/f4d92580ad914a4ba4d58646f699e0e7","handle":"zerodelta","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "robot-simulator",
+    "id": "f4d92580ad914a4ba4d58646f699e0e7",
+    "url": "https://exercism.io/tracks/clojure/exercises/robot-simulator/solutions/f4d92580ad914a4ba4d58646f699e0e7",
+    "handle": "zerodelta",
+    "is_requester": true,
+    "auto_approve": false
+}
