@@ -15,12 +15,11 @@
 (defn encode 
     [plain] 
     (let [chunk-size 5]
-      (->>
-        (-> plain 
-            lower-case
-            (replace #"[^a-z0-9]" ""))
-        (map encipher)
-        (filter identity)
-        (partition-all chunk-size)
-        (map (partial apply str))
-        (join " "))))
+      (->> (-> plain 
+               lower-case
+               (replace #"[^a-z0-9]" ""))
+           (map encipher)
+           (filter identity)
+           (partition-all chunk-size)
+           (map (partial apply str))
+           (join " "))))
