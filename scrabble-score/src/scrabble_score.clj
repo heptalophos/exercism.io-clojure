@@ -11,8 +11,9 @@
             })
 
 (def scores
-  (into {} (for [[value letters] values letter letters]
-                  [letter value])))
+  (into {} (for [[value letters] 
+                 values letter letters]
+                 [letter value])))
 
 (defn score-letter 
   [letter]
