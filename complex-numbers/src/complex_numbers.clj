@@ -1,40 +1,41 @@
-(ns complex-numbers)
+(ns complex-numbers
+  (:require [clojure.math.numeric-tower :refer [expt sqrt]]))
 
 (defn real 
-  [[a b]]
-  a)
+  [[r i]]
+  r)
 
 (defn imaginary 
-  [[a b]]
-  b)
+  [[r i]]
+  i)
 
 (defn abs 
-  [[a b]]
-  (Math/sqrt (apply + (map #(Math/pow % 2) [a b]))))
+  [[r i]]
+  (float (sqrt (apply + (map #(expt % 2) [r i])))))
 
 (defn conjugate 
-  [[a b]]
-  [a (* b -1)])
+  [[r i]]
+  [r (* i -1)])
 
 (defn add 
-  [[a b] [c d]]
-  [(+ a c) (+ b d)] )
+  [[r1 i1] [r2 i2]]
+  [(+ r1 r2) (+ i1 i2)] )
 
-(defn sub [[a b] [c d]] 
-  [(- a c) (- b d)] )
+(defn sub [[r1 i1] [r2 i2]] 
+  [(- r1 r2) (- i1 i2)] )
 
 (defn mul 
-  [[a b] [c d]] 
-  [(- (* a c) (* b d))
-  (+ (* a d) (* b c))])
+  [[r1 i1] [r2 i2]] 
+  [(- (* r1 r2) (* i1 i2))
+  (+ (* r1 i2) (* i1 r2))])
 
 (defn- denom 
   [c n]
   (let [absc (abs c)]
-    (/ n (* absc absc))))
+  (/ n (* absc absc))))
 
-(defn div [[a b] [c d]] 
-  (->> (conjugate [c d])
-       (mul [a b])
-       (map (partial denom [c d]))
-       (apply vector)))
+(defn div [[r1 i1] [r2 i2]] 
+    (->> (conjugate [r2 i2])
+         (mul [r1 i1])
+         (map (partial denom [r2 i2]))
+         (apply vector)))
