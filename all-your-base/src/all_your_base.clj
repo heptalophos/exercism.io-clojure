@@ -13,12 +13,12 @@
             (recur (cons (mod cur base) ds)
                    (quot cur base)))))
 
-(defn convert [inbase num outbase] 
+(defn convert [inbase digits outbase] 
 	(if (or (< inbase 2) 
 			(< outbase 2) 
-			(not (empty? (filter neg? num)))
-			(not (empty? (filter #(>= % inbase) num)))) 
+			(not (empty? (filter neg? digits)))
+			(not (empty? (filter #(>= % inbase) digits)))) 
 		nil
-		(if (empty? num) 
+		(if (empty? digits) 
 			'()
-			(dec->digs (digs->dec num inbase) outbase))))
+			(dec->digs (digs->dec digits inbase) outbase))))
