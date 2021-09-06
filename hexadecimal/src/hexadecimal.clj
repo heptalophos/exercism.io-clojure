@@ -7,11 +7,11 @@
 (defn hex-to-int 
      [hex]
      "Converts a hexadecimal string to a decimal integer
-      by: 1. checking hexadecimal well-formedness, 
-          2. mapping hex digits to decimal values, 
-          3. reversing their order, 
-          4. raising them to powers of 16 and 
-          5. adding them up."
+      by checking hexadecimal well-formedness, 
+         mapping hex digits to decimal values, 
+         reversing their order, 
+         raising them to powers of 16 and 
+         adding them up."
      (if (every? digits hex) 
           (->> hex
                (map digits)
