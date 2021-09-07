@@ -22,3 +22,23 @@ Ran 9 tests containing 9 assertions.
 0 failures, 0 errors.
 {:test 9, :pass 9, :fail 0, :error 0, :type :summary}
 
+
+
+>lein repl
+
+REPL-y 0.3.7, nREPL 0.2.12
+Clojure 1.10.0
+Java HotSpot(TM) 64-Bit Server VM 14.0.1+7
+
+=> (require 'pangram-test)
+nil
+
+=> (clojure.test/run-tests 'pangram-test)
+
+Testing pangram-test
+
+Ran 9 tests containing 9 assertions.
+0 failures, 0 errors.
+{:test 9, :pass 9, :fail 0, :error 0, :type :summary}
+
+=> Bye for now!
