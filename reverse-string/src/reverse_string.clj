@@ -1,12 +1,7 @@
 (ns reverse-string
-  (:require [clojure.string 
-             :refer [join]]))
+  (:require [clojure.string :refer [join]]))
 
 (defn reverse-string
-  "reverses a string" 
+  "reverses a string in place" 
   [input]
-  (join (-> 
-         input 
-         str 
-         seq 
-         reverse)))
+  (->> input str seq (into ()) join))
