@@ -2,7 +2,7 @@
 
 (def dna-pattern #"[GCAT]+")
 
-(def dna->rna {\T "A", \A "U", \C "G", \G "C"})
+(def dna->rna {\A "U", \C "G", \G "C", \T "A"})
 
 (defn dna?
     "Checks a sequence of nucleotides
