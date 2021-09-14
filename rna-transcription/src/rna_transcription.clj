@@ -1,12 +1,18 @@
 (ns rna-transcription)
 
-(def dna->rna {\T "A", \A "U", \C "G", \G "C"})
+(def dna-pattern #"[GCAT]+")
 
-(defn dna? 
+(def dna->rna {\A "U", \C "G", \G "C", \T "A"})
+
+(defn dna?
+    "Checks a sequence of nucleotides
+     against the dna pattern to determine match"
     [sequence]
-    (re-matches #"[GCAT]+" sequence))
+    (re-matches dna-pattern sequence))
 
-(defn to-rna 
+(defn to-rna
+    "Checks if a sequence is actually dna
+     and then maps into the corresponding rna"
     [sequence] 
     (assert (dna? sequence))
     (apply str (map dna->rna sequence)))
