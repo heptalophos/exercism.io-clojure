@@ -9,3 +9,30 @@ lein test pig-latin-test
 
 Ran 20 tests containing 20 assertions.
 0 failures, 0 errors.
+
+
+
+>lein repl
+
+REPL-y 0.3.7, nREPL 0.2.12
+Clojure 1.10.0
+Java HotSpot(TM) 64-Bit Server VM 14.0.1+7
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+
+=> (require 'pig-latin-test)
+nil
+=> (clojure.test/run-tests 'pig-latin
+pig-latin        pig-latin-test
+=> (clojure.test/run-tests 'pig-latin-test)
+
+Testing pig-latin-test
+
+Ran 20 tests containing 20 assertions.
+0 failures, 0 errors.
+{:test 20, :pass 20, :fail 0, :error 0, :type :summary}
+=> Bye for now!
