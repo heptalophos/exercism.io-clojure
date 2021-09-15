@@ -15,4 +15,5 @@ target/
 /../.lein-repl-history
 /../.nrepl-port
 cleanup.*
+HELP.md
 .fake
