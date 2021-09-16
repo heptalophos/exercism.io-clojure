@@ -5,7 +5,7 @@
 (defn acronym 
     [words] 
     (->> words 
-         (re-seq #"\p{Upper}*\p{Lower}*")
+         (re-seq #"[A-Z]*[a-z]*")
          (map first)
          (join)
          (upper-case)))
