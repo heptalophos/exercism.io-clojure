@@ -4,7 +4,7 @@
       [a b c] 
       (let [sorted (sort > [a b c])]
             (if (>= (first sorted) (apply + (rest sorted))) 
-                  :illogical 
+                  :degenerate-or-illogical 
                   (case (count (set sorted))
                         1 :equilateral
                         2 :isosceles
