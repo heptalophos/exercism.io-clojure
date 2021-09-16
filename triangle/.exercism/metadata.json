@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"triangle","id":"11313ae9591a4572b90e631cbe12a1f3","url":"https://exercism.org/tracks/clojure/exercises/triangle","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "triangle",
+    "id": "11313ae9591a4572b90e631cbe12a1f3",
+    "url": "https://exercism.org/tracks/clojure/exercises/triangle/solutions/triangle",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
