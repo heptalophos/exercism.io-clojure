@@ -1,13 +1,14 @@
 (ns nucleotide-count
   (:refer-clojure :exclude [count]))
 
+(def dna-nucleotides {\G 0, \C 0, \T 0, \A 0})
+
 (defn nucleotide-counts 
   [strand] 
-  (merge-with + {\G 0, \C 0, \T 0, \A 0} 
+  (merge-with + dna-nucleotides
               (frequencies strand)))
 
 (defn count-of-nucleotide-in-strand 
   [nucleotide strand] 
-  (if (contains? #{\G, \C, \T, \A, \U} nucleotide)
-      ((nucleotide-counts strand) nucleotide 0)
-      (throw (Exception. "Invalid nucleotide"))))
+  {:pre [(contains? dna-nucleotides nucleotide)]}
+  ((nucleotide-counts strand) nucleotide 0))
