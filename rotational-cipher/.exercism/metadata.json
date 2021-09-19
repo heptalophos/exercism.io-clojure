@@ -1,9 +1,1 @@
-{
-    "track": "clojure",
-    "exercise": "rotational-cipher",
-    "id": "eb2d4fc288cf4fd99859264068bcad0a",
-    "url": "https://exercism.io/tracks/clojure/exercises/rotational-cipher/solutions/eb2d4fc288cf4fd99859264068bcad0a",
-    "handle": "zerodelta",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"clojure","exercise":"rotational-cipher","id":"eb2d4fc288cf4fd99859264068bcad0a","url":"https://exercism.org/tracks/clojure/exercises/rotational-cipher","handle":"heptalophos","is_requester":true,"auto_approve":false}
