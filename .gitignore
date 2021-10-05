@@ -16,4 +16,5 @@ target/
 /../.nrepl-port
 cleanup.*
 HELP.md
+HINTS.md
 .fake
