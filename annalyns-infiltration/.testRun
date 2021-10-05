@@ -1,0 +1,18 @@
+>lein repl
+
+REPL-y 0.3.7, nREPL 0.2.12
+Clojure 1.10.0
+Java HotSpot(TM) 64-Bit Server VM 14.0.1+7
+
+=> (require 'annalyns-infiltration-test)
+nil
+
+=> (clojure.test/run-tests 'annalyns-infiltration-test)
+
+Testing annalyns-infiltration-test
+
+Ran 29 tests containing 29 assertions.
+0 failures, 0 errors.
+{:test 29, :pass 29, :fail 0, :error 0, :type :summary}
+
+=> Bye for now!
