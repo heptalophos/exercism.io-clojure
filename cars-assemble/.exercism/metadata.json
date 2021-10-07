@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"cars-assemble","id":"0e1d1aa337434a488fcd8b51403502cf","url":"https://exercism.org/tracks/clojure/exercises/cars-assemble","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "cars-assemble",
+    "id": "0e1d1aa337434a488fcd8b51403502cf",
+    "url": "https://exercism.org/tracks/clojure/exercises/cars-assemble/solutions/heptalophos",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
