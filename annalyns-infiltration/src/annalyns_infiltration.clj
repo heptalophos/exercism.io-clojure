@@ -32,7 +32,6 @@
   (let [archer-sleeping (not archer-awake?)
         knight-sleeping (not knight-awake?)] 
       (and archer-sleeping 
-           (or dog-present? 
-               (and prisoner-awake? 
-                    knight-sleeping))))
+           (or dog-present? (and prisoner-awake? 
+                             knight-sleeping))))
 )
