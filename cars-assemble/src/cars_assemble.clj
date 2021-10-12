@@ -12,8 +12,10 @@
                  4  1.0
                  8  0.9
                  9  0.8
-                 10 0.77)]
-  (* speed per-hour-baseline success-rate ))
+                 10 0.77)
+        true-speed 
+          (* speed success-rate)]
+  (* per-hour-baseline true-speed))
 )
 
 (defn working-items
