@@ -1,5 +1,5 @@
 (ns beer-song
-    (:require [clojure.string :refer [join capitalize]]))
+  (:require [clojure.string :refer [join capitalize]]))
 
 (def stanza 
      "%s of beer on the wall, %s of beer.\n%s, %s of beer on the wall.\n")
@@ -17,16 +17,16 @@
 
 (defn verse
   "Returns the nth verse of the song."
-  [n]
-  (format stanza (capitalize (premise n)) 
-                 (premise n) 
-                 (conclusion n) 
-                 (premise (- n 1))))
+  [num]
+  (format stanza (capitalize (premise num)) 
+                 (premise num) 
+                 (conclusion num) 
+                 (premise (- num 1))))
 
 (defn sing
-  "Given a start and an optional end, returns all verses in this interval. 
-  If end is not given, the whole song from start is sung."
-  ([start] 
+  "Given a start and an optional end, returns all verses in this interval. If
+  end is not given, the whole song from start is sung."
+  ([start]
     (sing start 0))
-  ([start end] 
+  ([start end]
     (join "\n" (map verse (reverse (range end (+ start 1)))))))
