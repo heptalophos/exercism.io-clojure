@@ -1,17 +1,7 @@
-
 lein test sublist-test
 
 Ran 1 tests containing 17 assertions.
 0 failures, 0 errors.
-
-
-
-lein test sublist-test
-
-Ran 1 tests containing 17 assertions.
-0 failures, 0 errors.
-
-
 
 
 lein test sublist-test
@@ -20,9 +10,21 @@ Ran 1 tests containing 17 assertions.
 0 failures, 0 errors.
 
 
+>lein repl
 
+REPL-y 0.3.7, nREPL 0.2.12
+Clojure 1.10.0
+Java HotSpot(TM) 64-Bit Server VM 14.0.1+7
 
-lein test sublist-test
+user=> (require 'sublist-test)
+nil
 
-Ran 1 tests containing 17 assertions.
+user=> (clojure.test/run-tests 'sublist-test)
+
+Testing sublist-test
+
+Ran 17 tests containing 17 assertions.
 0 failures, 0 errors.
+{:test 17, :pass 17, :fail 0, :error 0, :type :summary}
+
+user=> Bye for now!
