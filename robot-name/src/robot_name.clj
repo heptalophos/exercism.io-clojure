@@ -1,6 +1,6 @@
 (ns robot-name)
 
-(defn generate-name 
+(defn- generate-name 
   []
   (let [ALPHABET (range 65 91)]
     (format "%1$s%2$s%3$03d" 
@@ -21,3 +21,4 @@
 (defn reset-name 
   [robot]
   (reset! (:name robot) (generate-name)))
+
