@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"log-levels","id":"10b3e7062814423483cbeecc86c62502","url":"https://exercism.org/tracks/clojure/exercises/log-levels","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "log-levels",
+    "id": "10b3e7062814423483cbeecc86c62502",
+    "url": "https://exercism.org/tracks/clojure/exercises/log-levels/solutions/10b3e7062814423483cbeecc86c62502",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
