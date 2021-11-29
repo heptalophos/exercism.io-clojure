@@ -1,12 +1,10 @@
-.vscode
-.vscode/*
 .ionide/
+.vscode/
 .older/
-!/../settings.json
+/*/settings.json
 target/
 /../target/
 /../target/*
-# /*/target/
 .lein-failures
 .lein-repl-history
 .nrepl-port
@@ -18,4 +16,5 @@ target/
 cleanup.*
 HELP.md
 HINTS.md
+.vscode/*
 .fake
