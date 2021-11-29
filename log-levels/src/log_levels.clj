@@ -3,9 +3,9 @@
 
 (defn- log-line-parse 
   [log-line]
-  (let [log-line-parts (re-find #"\[(\w+)\]:\s*(.+)" log-line)]
-   {:log-level (lower-case (log-line-parts 1)) 
-    :message (trim (log-line-parts 2))}))
+  (let [log-line-part (re-find #"\[(\w+)\]:\s*(.+)" log-line)]
+   { :log-level (lower-case (log-line-part 1)) :message (trim (log-line-part 2)) }
+  ))
 
 (defn message
   "Takes a string representing a log line
@@ -23,4 +23,6 @@
   "Takes a string representing a log line and formats it
    with the message first and the log level in parentheses."
   [s]
-  (join nil [(message s) \space \( (log-level s) \)]))
+  ;; (join nil [(message s) \space \( (log-level s) \)]))
+  (format "%s (%s)" (message s) (log-level s)))
+  
