@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"bird-watcher","id":"e71df18530fc42879686da43db56c2d6","url":"https://exercism.org/tracks/clojure/exercises/bird-watcher","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "bird-watcher",
+    "id": "e71df18530fc42879686da43db56c2d6",
+    "url": "https://exercism.org/tracks/clojure/exercises/bird-watcher/solutions/e71df18530fc42879686da43db56c2d6",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
