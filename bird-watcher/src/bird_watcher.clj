@@ -8,15 +8,15 @@
 
 (defn inc-bird 
       [birds]
-    (-> birds 
-        pop
-        (conj (-> birds 
-                  today 
-                  inc))))
+    (#(assoc % 
+        (- (count %) 1) 
+        (+ (today %) 1)) 
+     birds))
 
 (defn day-without-birds? 
       [birds]
-    (not-every? #(> % 0) birds))
+    (->> birds 
+         (not-every? #(> % 0))))
 
 (defn n-days-count 
       [birds n]
@@ -26,8 +26,12 @@
 
 (defn busy-days 
       [birds]
-    (count (filter #(>= % 5) birds)))
+    (->> birds
+         (filter #(>= % 5))
+         count))
 
 (defn odd-week? 
       [birds]
-    (= birds (take (count birds) (cycle [1 0]))))
+    (= birds 
+       (take (count birds) 
+             (cycle [1 0]))))

@@ -1,0 +1,19 @@
+>lein repl
+
+REPL-y 0.3.7, nREPL 0.2.12
+Clojure 1.10.0
+Java HotSpot(TM) 64-Bit Server VM 14.0.1+7
+
+=> (require 'bank-account-test)
+WARNING: pcalls already refers to: #'clojure.core/pcalls in namespace: bank-account-test, being replaced by: #'bank-account-test/pcalls
+nil
+
+=> (clojure.test/run-tests 'bank-account-test)
+
+Testing bank-account-test
+
+Ran 5 tests containing 8 assertions.
+0 failures, 0 errors.
+{:test 5, :pass 8, :fail 0, :error 0, :type :summary}
+
+=> Bye for now!
