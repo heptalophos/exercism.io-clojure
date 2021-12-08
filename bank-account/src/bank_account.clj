@@ -8,7 +8,7 @@
     [account]
     (if (@account :live) 
         (swap! account assoc :live false)
-        (throw (Exception. "Account is not live"))))
+        (throw (Exception. "Account is already closed"))))
 
 (defn get-balance 
     [account]
