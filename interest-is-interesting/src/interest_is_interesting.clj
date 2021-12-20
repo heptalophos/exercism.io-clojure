@@ -1,16 +1,29 @@
 (ns interest-is-interesting)
 
+(defn- abs [x] (max x (- x)))
+
 (defn interest-rate
-  "TODO: add docstring"
-  [balance]
-  )
+  "Calculate interest rate based on current balance"
+    [balance]
+    (condp > balance
+        0    -3.213
+        1000 0.5
+        5000 1.621
+             2.475))
 
 (defn annual-balance-update
-  "TODO: add docstring"
+  "Update balance with accrued interest"
   [balance]
-  )
+  (+ balance (* 0.01M balance (->> balance 
+                                   (interest-rate) 
+                                   (abs) 
+                                   (bigdec)))))
 
 (defn amount-to-donate
-  "TODO: add docstring"
+  "Calculate the amount that can be donated for a balance and the tax free rate"
   [balance tax-free-percentage]
-  )
+  (max 0 (->> balance 
+              (* 2M) 
+              (* 0.01) 
+              (* (-> tax-free-percentage bigdec)) 
+              (int))))
