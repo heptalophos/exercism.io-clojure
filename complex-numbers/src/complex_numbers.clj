@@ -32,7 +32,7 @@
 (defn- denom 
   [c n]
   (let [absc (abs c)]
-  (/ n (* absc absc))))
+    (/ n (* absc absc))))
 
 (defn div [[r1 i1] [r2 i2]] 
     (->> (conjugate [r2 i2])
