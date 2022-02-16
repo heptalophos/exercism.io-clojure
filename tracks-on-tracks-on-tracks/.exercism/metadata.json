@@ -1,9 +1,1 @@
-{
-    "track": "clojure",
-    "exercise": "tracks-on-tracks-on-tracks",
-    "id": "4d8a7744a6904af2a19bb3ab56b4e5fd",
-    "url": "https://exercism.org/tracks/clojure/exercises/tracks-on-tracks-on-tracks/solutions/4d8a7744a6904af2a19bb3ab56b4e5fd",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"clojure","exercise":"tracks-on-tracks-on-tracks","id":"4d8a7744a6904af2a19bb3ab56b4e5fd","url":"https://exercism.org/tracks/clojure/exercises/tracks-on-tracks-on-tracks","handle":"heptalophos","is_requester":true,"auto_approve":false}
