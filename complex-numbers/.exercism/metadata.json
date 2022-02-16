@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"complex-numbers","id":"c4b92a8b49da4643a807fa276e84a6db","url":"https://exercism.org/tracks/clojure/exercises/complex-numbers","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "complex-numbers",
+    "id": "c4b92a8b49da4643a807fa276e84a6db",
+    "url": "https://exercism.org/tracks/clojure/exercises/complex-numbers/solutions/c4b92a8b49da4643a807fa276e84a6db",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
