@@ -7,7 +7,7 @@
 
 (defn add-language
   "Adds a language to the list."
-  [lang lang-list]
+  [lang-list lang]
   (conj lang-list lang))
 
 (defn first-language
@@ -30,10 +30,12 @@
   Java and JavaScript, then finally returns a count of the total number
   of languages."
   []
-  (->> (new-list)
-       (add-language "Clojute")
-       (add-language "Lisp")
-       (remove-language)
-       (add-language "Java")
-       (add-language "Javascript")
-       (count)))
+  (let [learning (new-list)]
+    (-> learning 
+        (add-language "Clojure") 
+        (add-language "Lisp")
+        remove-language 
+        (add-language "Java") 
+        (add-language "Javascript")
+        count)))
+        
