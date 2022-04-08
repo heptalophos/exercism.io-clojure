@@ -1,9 +1,1 @@
-{
-    "track":"clojure",
-    "exercise":"spiral-matrix",
-    "id":"b7773a61c695493ab8b0057da79f7666",
-    "url":"https://exercism.io/tracks/clojure/exercises/spiral-matrix/solutions/b7773a61c695493ab8b0057da79f7666",
-    "handle":"heptalophos",
-    "is_requester":true,
-    "auto_approve":false
-}
+{"track":"clojure","exercise":"spiral-matrix","id":"b7773a61c695493ab8b0057da79f7666","url":"https://exercism.org/tracks/clojure/exercises/spiral-matrix","handle":"heptalophos","is_requester":true,"auto_approve":false}
