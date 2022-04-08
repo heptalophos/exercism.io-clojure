@@ -15,15 +15,12 @@
 (deftest spiral-matrix-of-2
   (testing "spiral matrix of 2"
     (is (= (spiral 2)
-           '((1 2)
-             (4 3))))))
+           '((1 2) (4 3))))))
 
 (deftest spiral-matrix-of-3
   (testing "spiral matrix of 3"
     (is (= (spiral 3)
-           '((1 2 3)
-             (8 9 4)
-             (7 6 5))))))
+           '((1 2 3) (8 9 4) (7 6 5))))))
 
 (deftest spiral-matrix-of-4
   (testing "spiral matrix of 4"
