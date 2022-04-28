@@ -1,9 +1,1 @@
-{
-    "track": "clojure",
-    "exercise": "change",
-    "id": "9a0254b94f11440e978847bd5f82f9ba",
-    "url": "https://exercism.org/tracks/clojure/exercises/change/solutions/9a0254b94f11440e978847bd5f82f9ba",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"clojure","exercise":"change","id":"9a0254b94f11440e978847bd5f82f9ba","url":"https://exercism.org/tracks/clojure/exercises/change","handle":"heptalophos","is_requester":true,"auto_approve":false}
