@@ -1,9 +1,1 @@
-{
-    "track": "clojure",
-    "exercise": "dominoes",
-    "id": "a169b26d428645f0b43b152aa5ba0d41",
-    "url": "https://exercism.io/tracks/clojure/exercises/dominoes/solutions/a169b26d428645f0b43b152aa5ba0d41",
-    "handle": "zerodelta",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"clojure","exercise":"dominoes","id":"a169b26d428645f0b43b152aa5ba0d41","url":"https://exercism.org/tracks/clojure/exercises/dominoes","handle":"heptalophos","is_requester":true,"auto_approve":false}
