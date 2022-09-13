@@ -3,7 +3,6 @@
 (defn accumulate 
       [f xs]
       (if (seq xs)
-          (cons 
-              (f (first xs))
-              (accumulate f (rest xs))) 
+          (cons (f (first xs))
+                (accumulate f (rest xs))) 
           []))
