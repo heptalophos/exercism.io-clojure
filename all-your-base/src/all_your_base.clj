@@ -2,9 +2,10 @@
 
 (defn- digs->dec [digits base]
     (loop [n 0 d digits]
-      (if (empty? d) 
-     	  n 
-		  (recur (+ (first d) (* base n)) (rest d)))))
+      	(if (empty? d) 
+     	  	n 
+		  	(recur (+ (first d) (* base n)) 
+				   (rest d)))))
 
 (defn- dec->digs [num base]
     (loop [ds [] cur num]
@@ -18,7 +19,8 @@
 			(< outbase 2) 
 			(not (empty? (filter neg? digits)))
 			(not (empty? (filter #(>= % inbase) digits)))) 
-		nil
-		(if (empty? digits) 
-			'()
-			(dec->digs (digs->dec digits inbase) outbase))))
+			nil
+			(if (empty? digits) 
+				'()
+				(dec->digs (digs->dec digits inbase) 
+						   outbase))))
