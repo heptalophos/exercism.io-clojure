@@ -3,8 +3,7 @@
 
 (defn flatten 
   [array]
-  (->>
-   array 
-   (tree-seq sequential? seq)
-   (filter (complement sequential?)) 
-   (remove nil?)))
+  (->> array 
+       (tree-seq sequential? seq)
+       (filter (complement sequential?)) 
+       (remove nil?)))
