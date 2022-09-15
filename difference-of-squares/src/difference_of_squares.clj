@@ -13,7 +13,7 @@
 (defn square-of-sum
   [n]
   (let [sum (reduce + (naturals n))]
-    (* sum sum)))
+  (* sum sum)))
 
 (defn difference 
   [n]

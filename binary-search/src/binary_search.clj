@@ -2,7 +2,7 @@
 
 (defn middle
   [lst]
-  (int (/ (count lst) 2)))
+  (int (bit-shift-right (count lst) 1)))
 
 (defn search-for 
   [item lst]
