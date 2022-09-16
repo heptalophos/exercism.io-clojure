@@ -1,16 +1,30 @@
 (ns gigasecond
-  (:require [clj-time.core :as time]))
+(:import [java.time Duration LocalDateTime])
+)
 
-(defn add-gigasecond
+(def ^:private gigasec (Duration/ofSeconds 1e9))
+
+(defn- add-gigasecond
     [date]
-    (time/plus date (time/seconds 1e9)))
+    (.plus date gigasec)
+)
+
+(defn- from-date
+    [y m d] 
+    (LocalDateTime/of y m d 0 0)
+)
 
 (defn- format-output
     [date] 
-    [(time/year date) (time/month date) (time/day date)])
+    (vector (.getYear date) 
+            (.getMonthValue date) 
+            (.getDayOfMonth date)
+    )
+)
 
 (defn from 
     [year mon day]
-    (-> (time/date-time year mon day)
+    (-> (from-date year mon day)
         add-gigasecond
-        format-output))
+        format-output)
+)
