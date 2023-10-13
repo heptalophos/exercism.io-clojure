@@ -1,17 +1,14 @@
-(ns pig-latin 
-    (:require [clojure.string 
-               :refer [join replace split]]))
+(ns pig-latin (:require 
+               [clojure.string :as s :refer [join split]]))
 
 (def pattern-vowel #"([aeiou]|xr|yt).+")
-(def pattern-conso #"(s?qu|[^aeiou]+)(.+)")
+(def pattern-conso #"(s?qu|rh|[^aeiou]+)(.+)")
 
 (defn pig-latinize 
     [word]
 (cond 
-    (re-matches pattern-vowel word) 
-        (str word "ay")
-    (re-matches pattern-conso  word) 
-        (replace word pattern-conso "$2$1ay")
+    (re-matches pattern-vowel word) (str word "ay")
+    (re-matches pattern-conso  word) (s/replace word pattern-conso "$2$1ay")
     :else ""))
 
 (defn translate 
