@@ -1,6 +1,9 @@
 .ionide/
 .vscode/
 .older/
+.clj-kondo/
+.lsp/
+.cpcache/
 /*/settings.json
 target/
 /../target/
