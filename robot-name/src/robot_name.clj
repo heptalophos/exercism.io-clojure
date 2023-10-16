@@ -1,24 +1,34 @@
 (ns robot-name)
 
-(defn- generate-name 
-  []
-  (let [ALPHABET (range 65 91)]
-    (format "%1$s%2$s%3$03d" 
-            (char (rand-nth ALPHABET)) 
-            (char (rand-nth ALPHABET)) 
-            (rand-int 1000))))
+(def used-names (atom ()))
 
+(defn- generate-name
+  "Generates a random robot name and checks if it exists. 
+   If it does, `generate-name` calls itself again. 
+   If it is a new name, it is first added to the existing 
+   names and then the fcn returns the new name."
+  []
+  (let [letters (apply str (repeatedly 2 #(char (rand-nth (range 65 91)))))
+        numbers (apply str (repeatedly 3 #(rand-int 10)))
+        name (str letters numbers)]
+    (cond (some (fn [x] (= x name)) (deref used-names))
+          (generate-name)
+          (swap! used-names conj name)
+          name)))
+    
 (defrecord Robot [name])
 
 (defn robot 
-  []
-  (Robot. (atom (generate-name))))
+  "Creates a new Robot"
+  [] 
+  (->Robot (atom (generate-name))))
 
-(defn robot-name 
+(defn robot-name
+  "Accesses a robot's name"
   [robot]
-  @(:name robot))
+  (deref (:name robot)))
 
-(defn reset-name 
+(defn reset-name
+  "Assigns a new name to an existing robot"
   [robot]
   (reset! (:name robot) (generate-name)))
-
