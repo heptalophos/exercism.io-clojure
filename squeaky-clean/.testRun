@@ -6,3 +6,15 @@ Testing squeaky-clean-test
 
 Ran 10 tests containing 10 assertions.
 0 failures, 0 errors.
+
+
+
+>clj -X:test
+
+
+Running tests in #{"test"}
+
+Testing squeaky-clean-test
+
+Ran 10 tests containing 10 assertions.
+0 failures, 0 errors.
