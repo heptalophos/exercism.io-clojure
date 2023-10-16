@@ -1,12 +1,14 @@
 (ns complex-numbers
-  (:require [clojure.math.numeric-tower :refer [expt sqrt]]))
+  (:require [clojure.math.numeric-tower :refer [expt sqrt]])
+  ;; (:require [clojure.math :refer [ sqrt]])
+  (:refer-clojure :exclude [abs]))
 
 (defn real 
-  [[r i]]
+  [[r _]]
   r)
 
 (defn imaginary 
-  [[r i]]
+  [[_ i]]
   i)
 
 (defn abs 
