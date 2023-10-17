@@ -1,6 +1,5 @@
 (ns complex-numbers
-  (:require [clojure.math.numeric-tower :refer [expt sqrt]])
-  ;; (:require [clojure.math :refer [ sqrt]])
+  ;; (:require [clojure.math.numeric-tower :refer [expt sqrt]])
   (:refer-clojure :exclude [abs]))
 
 (defn real 
@@ -13,7 +12,7 @@
 
 (defn abs 
   [[r i]]
-  (float (sqrt (apply + (map #(expt % 2) [r i])))))
+  (float (Math/sqrt (apply + (map #(Math/pow % 2) [r i])))))
 
 (defn conjugate 
   [[r i]]
