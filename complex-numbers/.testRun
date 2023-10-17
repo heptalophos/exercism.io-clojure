@@ -38,3 +38,15 @@ Testing complex-numbers-test
 
 Ran 35 tests containing 35 assertions.
 0 failures, 0 errors.
+
+
+
+>clj -X:test
+
+
+Running tests in #{"test"}
+
+Testing complex-numbers-test
+
+Ran 35 tests containing 35 assertions.
+0 failures, 0 errors.
