@@ -1,8 +1,8 @@
-(ns etl
+(ns etl 
   (:require [clojure.string :refer [lower-case]]))
 
-(defn transform 
+(defn transform
   [source]
-  (into {}
-      (for [[score letters] source letter letters]
-      [(lower-case letter) score])))
+  (into {} 
+        (for [[score letters] source letter letters]
+             [(lower-case letter) score])))
