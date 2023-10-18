@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"phone-number","id":"117d6b45f6e14751965a3bedda31621a","url":"https://exercism.org/tracks/clojure/exercises/phone-number","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "phone-number",
+    "id": "117d6b45f6e14751965a3bedda31621a",
+    "url": "https://exercism.org/tracks/clojure/exercises/phone-number/solutions/117d6b45f6e14751965a3bedda31621a",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
