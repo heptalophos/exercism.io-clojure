@@ -9,3 +9,17 @@ Testing coordinate-transformation-test
 
 Ran 4 tests containing 22 assertions.
 0 failures, 0 errors.
+
+
+
+---------------------------------------
+Mon Oct 23 17:59:35 GTBDT 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing coordinate-transformation-test
+
+Ran 4 tests containing 22 assertions.
+0 failures, 0 errors.
