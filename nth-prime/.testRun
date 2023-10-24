@@ -3,3 +3,17 @@ lein test nth-prime-test
 
 Ran 5 tests containing 5 assertions.
 0 failures, 0 errors.
+
+
+
+---------------------------------------
+Tue Oct 24 16:59:59 GTBDT 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing nth-prime-test
+
+Ran 5 tests containing 5 assertions.
+0 failures, 0 errors.
