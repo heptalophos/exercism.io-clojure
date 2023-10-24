@@ -20,17 +20,17 @@
 
 (defn memoize-transform
   "Returns a function that memoizes the last result.
-   If the arguments are the same as the last call,
+   If the arguments are the same as the last call, 
    the memoized result is returned."
   [f]
-  (let [lastx (atom nil) 
-        lasty (atom nil) 
-        lastf (atom nil)]
-    (fn [x y] (cond (and (= x @lastx) (= y @lasty)) 
-                    @lastf
-                :else 
-                    (let [new-return (f x y)] 
-                      (reset! lastx x) 
-                      (reset! lasty y) 
-                      (reset! lastf new-return)
+  (let [lastx (atom ()) 
+        lasty (atom ()) 
+        lastf (atom ())]
+    (fn [x y] (cond (and (= x @lastx) (= y @lasty))
+                    (deref lastf)
+                :else
+                    (let [new-return (f x y)]
+                      (swap! lastx (fn [_] x))
+                      (swap! lasty (fn [_] y))
+                      (reset! lastf new-return) 
                     new-return)))))
