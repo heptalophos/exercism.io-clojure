@@ -22,5 +22,5 @@
           "Whoa, chill out!"
       (question? in) 
           "Sure."
-   :default 
+   :else 
           "Whatever."))

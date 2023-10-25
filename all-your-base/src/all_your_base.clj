@@ -3,14 +3,14 @@
 (defn- digs->dec 
   [digits base]
   (loop [n 0 d digits]
-      (if (empty? d)
-         n
-         (recur (+ (first d) (* base n)) (rest d)))))
+     (if (not (seq d))
+        n
+        (recur (+ (first d) (* base n)) (rest d)))))
 
 (defn- dec->digs 
   [num base]
   (loop [ds [] cur num]
-      (if (zero? cur)
+     (if (zero? cur)
          (if (not (seq ds)) '(0) ds)
          (recur (cons (mod cur base) ds) (quot cur base)))))
 
