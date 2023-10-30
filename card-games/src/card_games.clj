@@ -33,7 +33,7 @@
         total-cards (count hand) average (card-average hand)
         mean (/ (+ first-card last-card) 2.0)
         median (nth hand (/ total-cards 2))]
-    (or (== mean average) (== median average))))
+    (or (== average mean) (== average median))))
 
 (defn average-even-odd?
   "Returns true if the average of the cards at even indexes 
@@ -53,7 +53,7 @@
   [hand]
   (let [last-card (last hand) jack 11 
         all-but-Jack (drop-last hand)]
-    (cond (= jack last-card)
+    (cond (== jack last-card)
               (concat all-but-Jack [(* jack 2)])
           :else
               hand)))
