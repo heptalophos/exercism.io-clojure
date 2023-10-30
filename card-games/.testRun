@@ -32,3 +32,20 @@ total time
 ---------------------------------------
 3 Seconds 826 Milliseconds
 
+
+
+---------------------------------------
+Mon Oct 30 20:05:29 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing card-games-test
+
+Ran 7 tests containing 7 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 583 Milliseconds
