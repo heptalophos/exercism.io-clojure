@@ -17,6 +17,7 @@ target/
 /../.lein-repl-history
 /../.nrepl-port
 cleanup.*
+*.ps1
 # prepareTests.ps1
 runTests.ps1
 HELP.md
