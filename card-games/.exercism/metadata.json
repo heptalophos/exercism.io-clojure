@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"card-games","id":"faa8bc3ba486495ab9f20fffd6e5e449","url":"https://exercism.org/tracks/clojure/exercises/card-games","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "card-games",
+    "id": "faa8bc3ba486495ab9f20fffd6e5e449",
+    "url": "https://exercism.org/tracks/clojure/exercises/card-games/solutions/faa8bc3ba486495ab9f20fffd6e5e449",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
