@@ -17,7 +17,7 @@
   "Takes a list of rounds played and a round number.
    Returns `true` if the round is in the list, `false` if not."
   [l n]
-  (boolean (some (fn [_] (= _ n)) l)))
+  (boolean (some (fn [_] (== _ n)) l)))
 
 (defn card-average
   "Returns the average value of a hand"

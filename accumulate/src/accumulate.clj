@@ -1,8 +1,9 @@
 (ns accumulate)
 
-(defn accumulate 
-      [f xs]
-      (cond (seq xs) 
-            (cons (f (first xs)) (accumulate f (rest xs))) 
-         :else
-            []))
+(defn accumulate
+  [f xs]
+  (let [head (first xs) tail (rest xs)]
+    (cond (seq xs)
+          (cons (f head) (accumulate f tail))
+      :else
+          [])))

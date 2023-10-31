@@ -45,3 +45,22 @@ Testing accumulate-test
 
 Ran 5 tests containing 5 assertions.
 0 failures, 0 errors.
+
+
+
+---------------------------------------
+Mon Oct 30 23:20:58 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing accumulate-test
+
+Ran 5 tests containing 5 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 562 Milliseconds
+
