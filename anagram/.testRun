@@ -1,4 +1,3 @@
-
 lein test anagram-test
 
 Ran 9 tests containing 9 assertions.
@@ -16,3 +15,22 @@ Testing anagram-test
 Ran 9 tests containing 9 assertions.
 0 failures, 0 errors.
 {:test 9, :pass 9, :fail 0, :error 0, :type :summary}
+
+
+
+---------------------------------------
+Tue Oct 31 01:50:26 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing anagram-test
+
+Ran 9 tests containing 9 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 701 Milliseconds
+
