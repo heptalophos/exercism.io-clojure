@@ -13,7 +13,7 @@
   [l1 l2]
   (apply list (concat l1 l2)))
 
-(defn contains-round? 
+(defn contains-round?
   "Takes a list of rounds played and a round number.
    Returns `true` if the round is in the list, `false` if not."
   [l n]
@@ -51,9 +51,9 @@
   "If the last card is a Jack (11), doubles its value
    before returning the hand."
   [hand]
-  (let [last-card (last hand) jack 11 
-        all-but-Jack (drop-last hand)]
+  (let [last-card (last hand) jack 11
+        all-but-jack (drop-last hand)]
     (cond (== jack last-card)
-              (concat all-but-Jack [(* jack 2)])
+          (concat all-but-jack [(* jack 2)])
           :else
-              hand)))
+          hand)))

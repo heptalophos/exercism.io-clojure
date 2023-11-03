@@ -16,18 +16,18 @@
 (defn day-without-birds? 
       [birds]
     (->> birds 
-         (not-every? #(> % 0))))
+         (not-every? (fn [b] (> b 0)))))
 
 (defn n-days-count 
       [birds n]
     (->> birds
          (take n)
-         (reduce +)))
+         (apply +)))
 
 (defn busy-days 
       [birds]
     (->> birds
-         (filter #(>= % 5))
+         (filter (fn [b] (>= b 5)))
          count))
 
 (defn odd-week? 

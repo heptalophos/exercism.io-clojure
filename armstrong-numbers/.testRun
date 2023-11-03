@@ -28,3 +28,21 @@ Ran 10 tests containing 10 assertions.
 
 
 =========================================================
+
+
+
+---------------------------------------
+Tue Oct 31 03:43:10 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing armstrong-numbers-test
+
+Ran 10 tests containing 10 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 561 Milliseconds
