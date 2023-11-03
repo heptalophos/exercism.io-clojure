@@ -26,3 +26,21 @@ lein test bird-watcher-test
 
 Ran 13 tests containing 13 assertions.
 0 failures, 0 errors.
+
+
+
+---------------------------------------
+Tue Oct 31 04:24:23 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing bird-watcher-test
+
+Ran 13 tests containing 13 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 681 Milliseconds
