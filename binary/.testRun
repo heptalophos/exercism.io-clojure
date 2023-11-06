@@ -31,3 +31,21 @@ Ran 8 tests containing 8 assertions.
 {:test 8, :pass 8, :fail 0, :error 0, :type :summary}
 
 => Bye for now!
+
+
+
+---------------------------------------
+Tue Oct 31 03:56:51 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing binary-test
+
+Ran 8 tests containing 8 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 568 Milliseconds
