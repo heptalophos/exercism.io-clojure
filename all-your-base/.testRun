@@ -38,3 +38,22 @@ Testing all-your-base-test
 
 Ran 21 tests containing 21 assertions.
 0 failures, 0 errors.
+
+
+
+---------------------------------------
+Mon Nov  6 13:30:09 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing all-your-base-test
+
+Ran 21 tests containing 21 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 574 Milliseconds
+
