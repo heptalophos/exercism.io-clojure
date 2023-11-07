@@ -34,3 +34,22 @@ total time
 ---------------------------------------
 3 Seconds 701 Milliseconds
 
+
+
+
+---------------------------------------
+Tue Nov  7 23:40:14 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing anagram-test
+
+Ran 9 tests containing 9 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+4 Seconds 1 Milliseconds
+
