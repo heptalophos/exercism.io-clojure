@@ -26,7 +26,7 @@
   "returns a list of anagrams of word from word-list"
   [word word-list]
   (let [sorted-anagram (string-sort word)]
-    (filter (fn [w] (and (anagram? sorted-anagram w)
-                         (not-same? word w)
-                         (not-capital? word w)))
+    (filter (fn [_] (and (anagram? sorted-anagram _)
+                         (not-same? word _)
+                         (not-capital? word _)))
             word-list)))

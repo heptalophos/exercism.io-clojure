@@ -3,7 +3,7 @@
 (defn accumulate
   [f xs]
   (let [head (first xs) tail (rest xs)]
-    (cond (seq xs)
-          (cons (f head) (accumulate f tail))
-      :else
-          [])))
+    (cond (not (seq xs))
+          []
+      :else    
+          (cons (f head) (accumulate f tail)))))

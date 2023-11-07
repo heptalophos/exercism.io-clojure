@@ -1,19 +1,19 @@
 (ns binary-search)
 
 (defn middle
-  [lst]
-  (int (bit-shift-right (count lst) 1)))
+  [list]
+  (int (bit-shift-right (count list) 1)))
 
 (defn search-for 
-  [item lst]
-  (let [mid (middle lst)
-        curr (nth lst mid)]
-  (cond 
-    (= curr item) mid
-    (or 
-      (= mid (count lst)) (zero? mid)) 
-        (throw (Exception. (format "%s not found" item)))
-      (< curr item) 
-        (+ mid (search-for item (drop mid lst)))
-      (> curr item) 
-        (search-for item (take mid lst)))))
+  [item list]
+  (let [mid (middle list)
+        current (nth list mid)]
+  (cond
+      (= current item)
+          mid
+      (or (= mid (count list)) (zero? mid))
+          (throw (Exception. (format "%s not found" item)))
+      (< current item)
+          (+ mid (search-for item (drop mid list)))
+      (> current item)
+          (search-for item (take mid list)))))

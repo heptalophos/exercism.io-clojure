@@ -17,29 +17,29 @@
       {:value value nil nil} )
 
 (defn insert 
-      [val node]
-      (cond
-          (nil? node)
-              (singleton val)
-          (<= val (value node)) 
-              (assoc node :left 
-                     (insert val (left node)))
-          (> val (value node)) 
-              (assoc node :right 
-                     (insert val (right node)))
-          :else
-              node))
+    [val node]
+    (cond
+        (nil? node)
+            (singleton val)
+        (<= val (value node)) 
+            (assoc node :left 
+                (insert val (left node)))
+        (> val (value node)) 
+            (assoc node :right 
+                (insert val (right node)))
+      :else
+            node))
 
 (defn to-list 
-      [tree]
-      (if (nil? tree)
-          []
-          (concat (to-list (left tree)) 
-                  [(value tree)] 
-                  (to-list (right tree)) )))
+    [tree]
+    (if (nil? tree)
+        []
+        (concat (to-list (left tree)) 
+                 [(value tree)] 
+                (to-list (right tree)) )))
 
 (defn from-list 
-      [values] 
-      (reduce (fn [tree val] (insert val tree))
-              nil 
-              values))
+    [values] 
+    (reduce (fn [tree val] (insert val tree))
+             nil 
+             values))

@@ -12,14 +12,16 @@
   (loop [ds [] current num]
       (if (zero? current)
          (if (not (seq ds)) '(0) ds)
-         (recur (cons (mod current base) ds) (quot current base)))))
+         (recur (cons (mod current base) ds)
+                (quot current base)))))
 
 (defn convert
   [inbase digits outbase]
   (if (or (< inbase 2)
           (< outbase 2)
           (seq (filter neg? digits))
-          (seq (filter (fn [_] (>= _ inbase)) digits)))
+          (seq (filter (fn [_] (>= _ inbase)) 
+                       digits)))
       nil
       (if (not (seq digits))
           '()
