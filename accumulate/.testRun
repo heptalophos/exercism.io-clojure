@@ -48,8 +48,9 @@ Ran 5 tests containing 5 assertions.
 
 
 
+<!-- refactor accumulate for tail-recursion -->
 ---------------------------------------
-Mon Oct 30 23:20:58 GTBST 2023
+Mon Nov  6 23:20:58 GTBST 2023
 ---------------------------------------
 >clj -X:test
 
@@ -62,5 +63,5 @@ Ran 5 tests containing 5 assertions.
 
 total time                             
 ---------------------------------------
-3 Seconds 562 Milliseconds
+3 Seconds 281 Milliseconds
 
