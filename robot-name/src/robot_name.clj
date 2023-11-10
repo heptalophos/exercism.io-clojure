@@ -1,5 +1,8 @@
 (ns robot-name)
 
+(def ^:private capital-alphas (map (fn [_] (char _)) (range 65 91)))
+(def ^:private digits (map (fn [_] (char _)) (range 48 58)))
+
 (def used-names (atom ()))
 
 (defn- generate-name
@@ -8,10 +11,10 @@
    If it is a new name, it is first added to the existing 
    names and then the fcn returns the new name."
   []
-  (let [letters (apply str (repeatedly 2 #(char (rand-nth (range 65 91)))))
-        numbers (apply str (repeatedly 3 #(rand-int 10)))
+  (let [letters (apply str (repeatedly 2 #(rand-nth capital-alphas)))
+        numbers (apply str (repeatedly 3 #(rand-nth digits)))
         name (str letters numbers)]
-    (cond (some (fn [x] (= x name)) (deref used-names))
+    (cond (some (fn [_] (= _ name)) (deref used-names))
           (generate-name)
           (swap! used-names conj name)
           name)))
