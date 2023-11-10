@@ -17,3 +17,22 @@ Ran 5 tests containing 8 assertions.
 {:test 5, :pass 8, :fail 0, :error 0, :type :summary}
 
 => Bye for now!
+
+
+
+---------------------------------------
+Fri Nov 10 20:00:30 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing bank-account-test
+
+Ran 5 tests containing 8 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 670 Milliseconds
+
