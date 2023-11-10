@@ -19,5 +19,5 @@
 (defn update-balance 
     [account amount]
     (if (@account :live) 
-        (swap! account update-in [:balance] (fn [bal] (+ bal amount)))
+        (swap! account update-in [:balance] (fn [_] (+ _ amount)))
         (throw (Exception. "Can't update: account is closed"))))
