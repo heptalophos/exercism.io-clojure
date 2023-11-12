@@ -1,27 +1,27 @@
 (ns dominoes)
 
 (defn- remaining 
-    [d ds]
+    [stone ds]
     (for [i (range (count ds))
-         :let [[s [[a b] & r]] (split-at i ds)
-               m (cond (= a d) b (= b d) a)]
-         :when m]
-         [m (concat s r)]))
+         :let [[s [[a b] & rest]] (split-at i ds)
+                more (cond (= a stone) b (= b stone) a)]
+         :when more]
+         [more (concat s rest)]))
 
 (defn- boundary 
-    [d ds]
-    (some (fn [[d ds]]
+    [stone ds]
+    (some (fn [[stone ds]]
             (if (not (seq ds)) 
-               d 
-               (boundary d ds))) 
-          (remaining d ds)))
+               stone 
+               (boundary stone ds))) 
+          (remaining stone ds)))
 
 (defn can-chain? 
-    [[[a b] & ds]] 
+    [[[a-stone b-stone] & dominoes]] 
     (cond 
-        (nil? a)  
+        (nil? a-stone)  
             true
-        (nil? ds) 
-            (= a b)
+        (nil? dominoes) 
+            (= a-stone b-stone)
         :else     
-            (= a (boundary b (vec ds)))))
+            (= a-stone (boundary b-stone (vec dominoes)))))
