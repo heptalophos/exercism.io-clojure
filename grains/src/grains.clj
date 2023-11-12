@@ -2,9 +2,7 @@
 
 (defn- exp 
     [x n]
-    (reduce * 
-            (repeat n 
-                    (bigint x))))
+    (reduce * (repeat n (bigint x))))
 
 (defn square 
     [n]
