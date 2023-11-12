@@ -41,8 +41,11 @@ Ran 35 tests containing 35 assertions.
 
 
 
+===========================================================
+---------------------------------------
+Sun Nov 12 00:46:47 GTBST 2023
+---------------------------------------
 >clj -X:test
-
 
 Running tests in #{"test"}
 
@@ -50,3 +53,9 @@ Testing complex-numbers-test
 
 Ran 35 tests containing 35 assertions.
 0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 814 Milliseconds
+
+===========================================================
