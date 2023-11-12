@@ -1,14 +1,26 @@
 (ns allergies )
 
-(def ^:private allergens {:eggs 1 :peanuts 2 :shellfish 4 :strawberries 8
-                          :tomatoes 16 :chocolate 32 :pollen 64 :cats 128})
+(def ^:private ^:const causes
+  [:eggs :peanuts :shellfish :strawberries :tomatoes :chocolate :pollen :cats])
 
-(defn allergies [code]
-  (vec (for [[score allergen] allergens 
-        :when (pos? (bit-and code allergen))] score)))
+(def ^:private ^:const allergens 
+  (zipmap causes (map (fn [_] (bit-shift-left 1 _)) (range (count causes)))))
 
-(defn allergic-to? [code allergen] 
-  (-> allergen
-      allergens
-      (bit-and code)
-      pos?))
+(defn allergies 
+  [score]
+  (vec (for [[allergen code] allergens :when (> (bit-and score code) 0)]
+            allergen)))
+
+#_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
+(defn allergic-to? 
+  [score allergen]
+  (some (fn [_] (= _ allergen)) (allergies score)))
+
+;;;;;    OR    ;;;;;;;;;;;
+;; (defn allergic-to? 
+;;   [score allergen] 
+;;   (-> allergen
+;;       allergens
+;;       (bit-and score)
+;;       (> 0)))
+;;;;;;;;;;;;;;;;;;;;;;;;;;
