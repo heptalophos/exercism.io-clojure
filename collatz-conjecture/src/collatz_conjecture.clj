@@ -5,9 +5,9 @@
   (letfn [(collatz ;; recurrence 
             [n]
             (cond 
-                  (= n 1) 1
-                  (even? n) (/ n 2)
-                  :else (inc (* n 3))))]
+              (= n 1) 1
+              (even? n) (bit-shift-right n 1)
+              :else (inc (* 3 n))))]
   (if (> n 0) 
-    (count (take-while #(not= 1 %) (iterate collatz n)))
+    (count (take-while (fn [_] (not= 1 _)) (iterate collatz n)))
     (throw (IllegalArgumentException. "number must be positive")))))
