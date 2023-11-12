@@ -60,3 +60,22 @@ Testing dominoes-test
 
 Ran 12 tests containing 12 assertions.
 0 failures, 0 errors.
+
+
+
+---------------------------------------
+Mon Nov 13 00:29:08 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing dominoes-test
+
+Ran 12 tests containing 12 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 892 Milliseconds
+
