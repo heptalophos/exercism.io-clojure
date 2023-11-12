@@ -2,7 +2,7 @@
   (:require [clojure.string :refer [lower-case]]))
 
 (defn transform
-  [source]
+  [source-system]
   (into {} 
-        (for [[score letters] source letter letters]
+        (for [[score letters] source-system letter letters]
              [(lower-case letter) score])))
