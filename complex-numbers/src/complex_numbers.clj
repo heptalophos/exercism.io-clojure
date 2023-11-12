@@ -1,18 +1,17 @@
 (ns complex-numbers
-  ;; (:require [clojure.math.numeric-tower :refer [expt sqrt]])
   (:refer-clojure :exclude [abs]))
 
-(defn real 
-  [[r _]]
-  r)
+(defn real [[r _]] r)
 
-(defn imaginary 
-  [[_ i]]
-  i)
+(defn imaginary [[_ i]] i)
 
-(defn abs 
+(defn abs
   [[r i]]
-  (float (Math/sqrt (apply + (map #(Math/pow % 2) [r i])))))
+  (->> [r i]
+       (map (fn [_] (Math/pow _ 2)))
+       (apply +)
+       (Math/sqrt)
+       (float)))
 
 (defn conjugate 
   [[r i]]
@@ -27,16 +26,15 @@
 
 (defn mul 
   [[r1 i1] [r2 i2]] 
-  [(- (* r1 r2) (* i1 i2))
-  (+ (* r1 i2) (* i1 r2))])
+  [(- (* r1 r2) (* i1 i2)) (+ (* r1 i2) (* i1 r2))])
 
 (defn- denom 
   [c n]
   (let [absc (abs c)]
-    (/ n (* absc absc))))
+  (/ n (* absc absc))))
 
 (defn div [[r1 i1] [r2 i2]] 
-    (->> (conjugate [r2 i2])
-         (mul [r1 i1])
-         (map (partial denom [r2 i2]))
-         (apply vector)))
+  (->> (conjugate [r2 i2])
+       (mul [r1 i1])
+       (map (partial denom [r2 i2]))
+       (reduce vector)))

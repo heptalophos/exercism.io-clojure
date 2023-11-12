@@ -9,9 +9,12 @@
     "Returns true if the kidnappers can be spied upon, false otherwise."
     [knight-awake? archer-awake? prisoner-awake?]
     (cond
-        knight-awake? true
-        archer-awake? true
-        :else prisoner-awake?))
+      knight-awake?
+        true
+      archer-awake?
+        true
+      :else 
+        prisoner-awake?))
 
 (defn can-signal-prisoner?
     "Returns true if the prisoner can be signalled, false otherwise."

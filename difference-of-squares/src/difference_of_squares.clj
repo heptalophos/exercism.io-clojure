@@ -2,13 +2,11 @@
 
 (defn- naturals 
   [n] 
-  (->> (range)
-       (map inc)
-       (take n)))
+  (->> (range) (map inc) (take n)))
 
 (defn sum-of-squares 
   [n]
-  (reduce + (map #(* % %) (naturals n))))
+  (reduce + (map (fn [_] (* _ _)) (naturals n))))
 
 (defn square-of-sum
   [n]
