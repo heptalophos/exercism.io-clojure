@@ -11,16 +11,14 @@
          diagram))
 
 (defn garden 
-    ([diagram] (garden diagram kids))
+    ([diagram]
+        (garden diagram kids))
     ([diagram students]
         (->> diagram
              (re-seq #"[CGRV]+")
-             (map #(partition 2 %))
+             (map (fn [_] (partition 2 _)))
              (apply map vector)
-             (map #(apply concat %))
+             (map (fn [_] (reduce concat _)))
              (map plants)
-             (zipmap (map #(keyword (lower-case %)) 
-                          (sort students)))
-        )
-    )
-)
+             (zipmap (map (fn [_] (keyword (lower-case _))) 
+                          (sort students))))))
