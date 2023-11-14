@@ -4,13 +4,11 @@
 (defn isbn? [isbn]
   (-> (some->> (s/replace isbn "-" "")
                (re-matches #"^\d{9}[\dX]$")
-               (map (fn [c] 
-                    (if (= \X c) 
-                     10 
-                     (Character/digit c 10))))
-               (map (fn [n c] 
-                    (* n c)) (range 10 0 -1))
-               (apply +)
+               (map (fn [_] (if (= \X _) 
+                                10
+                                (Character/digit _ 10))))
+               (map (fn [n _] (* n _)) (range 10 0 -1))
+               (reduce +)
                (#(mod % 11))
-               zero?)
+               (zero?))
       boolean))
