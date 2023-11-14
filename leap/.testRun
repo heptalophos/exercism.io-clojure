@@ -48,3 +48,22 @@ Ran 9 tests containing 9 assertions.
 0 failures, 0 errors.
 {:test 9, :pass 9, :fail 0, :error 0, :type :summary}
 => Bye for now!
+
+
+
+---------------------------------------
+Mon Nov 13 01:27:54 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing leap-test
+
+Ran 9 tests containing 9 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 368 Milliseconds
+
