@@ -1,4 +1,4 @@
-(ns interest-is-interesting)
+(ns interest-is-interesting (:refer-clojure :exclude [abs]))
 
 (defn- abs [x] (max x (- x)))
 
