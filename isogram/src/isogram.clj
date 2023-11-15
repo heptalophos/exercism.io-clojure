@@ -1,8 +1,9 @@
-(ns isogram)
+(ns isogram
+    (:require [clojure.string :refer [lower-case]]))
 
 (defn isogram? 
     [sentence] 
     (->> sentence 
-         clojure.string/lower-case
+         (lower-case)
          (re-seq #"(?U)\p{Alpha}")
          (apply distinct?)))

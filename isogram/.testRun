@@ -3,3 +3,21 @@ lein test isogram-test
 
 Ran 2 tests containing 10 assertions.
 0 failures, 0 errors.
+
+
+
+---------------------------------------
+Wed Nov 15 00:56:16 GTBST 2023
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing isogram-test
+
+Ran 2 tests containing 10 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 746 Milliseconds
