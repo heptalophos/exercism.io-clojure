@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"isogram","id":"261c3f9ebe3e413b8a1d8bd8ebfe3af8","url":"https://exercism.org/tracks/clojure/exercises/isogram","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "isogram",
+    "id": "261c3f9ebe3e413b8a1d8bd8ebfe3af8",
+    "url": "https://exercism.org/tracks/clojure/exercises/isogram/solutions/261c3f9ebe3e413b8a1d8bd8ebfe3af8",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
