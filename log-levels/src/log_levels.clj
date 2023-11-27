@@ -4,7 +4,8 @@
 (defn- log-line-parse 
   [log-line]
   (let [log-line-part (re-find #"\[(\w+)\]:\s*(.+)" log-line)]
-   { :log-level (lower-case (log-line-part 1)) :message (trim (log-line-part 2)) }
+   { :log-level (lower-case (log-line-part 1)) 
+     :message (trim (log-line-part 2)) }
   ))
 
 (defn message
