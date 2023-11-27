@@ -5,8 +5,7 @@
 
 (defn nucleotide-counts 
   [strand] 
-  (merge-with + dna-nucleotides
-              (frequencies strand)))
+  (merge-with + dna-nucleotides (frequencies strand)))
 
 (defn count-of-nucleotide-in-strand 
   [nucleotide strand] 
