@@ -64,7 +64,7 @@ Ran 12 tests containing 12 assertions.
 
 
 ---------------------------------------
-Mon Nov 13 00:29:08 GTBST 2023
+Tue Nov 28 00:38:07 GTBST 2023
 ---------------------------------------
 >clj -X:test
 
@@ -77,5 +77,5 @@ Ran 12 tests containing 12 assertions.
 
 total time                             
 ---------------------------------------
-3 Seconds 892 Milliseconds
+3 Seconds 692 Milliseconds
 
