@@ -2,11 +2,12 @@
 
 (defn spiral 
   [n]
-  (if (pos? n)
+  (if (> n 0)
     (->> (range (dec n) 0 -1)
-         (mapcat #(repeat 2 %))
+         (mapcat (fn [_] (repeat 2 _)))
          (cons n)
-         (mapcat #(repeat %2 %1) (cycle [1 n -1 (- n)]))
+         (mapcat (fn [_ x] (repeat x _)) 
+                 (cycle [1 n -1 (- n)]))
          (reductions +)
          (map-indexed vector)
          (sort-by second)
