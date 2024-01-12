@@ -55,5 +55,5 @@
         all-but-jack (drop-last hand)]
     (cond (== jack last-card)
           (concat all-but-jack [(* jack 2)])
-          :else
+      :else
           hand)))
