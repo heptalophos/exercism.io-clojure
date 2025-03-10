@@ -1,0 +1,17 @@
+---------------------------------------
+Mon Mar 10 19:55:05 GTBST 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing darts-test
+
+Ran 13 tests containing 13 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+4 Seconds 63 Milliseconds
+
+---------------------------------------
