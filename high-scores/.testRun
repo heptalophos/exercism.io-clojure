@@ -1,0 +1,17 @@
+---------------------------------------
+Thu Mar 13 18:15:16 GTBST 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing high-scores-test
+
+Ran 8 tests containing 8 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 921 Milliseconds
+
+---------------------------------------
