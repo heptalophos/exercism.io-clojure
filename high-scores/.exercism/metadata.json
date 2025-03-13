@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"high-scores","id":"13f2a4cf6c2d431282b9527816b70c4e","url":"https://exercism.org/tracks/clojure/exercises/high-scores","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "high-scores",
+    "id": "13f2a4cf6c2d431282b9527816b70c4e",
+    "url": "https://exercism.org/tracks/clojure/exercises/high-scores/solutions/13f2a4cf6c2d431282b9527816b70c4e",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
