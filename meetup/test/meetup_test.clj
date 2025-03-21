@@ -2,7 +2,6 @@
   (:require [clojure.test :refer [deftest is]]
             meetup))
 
-
 (deftest monteenth-of-may-2013
   (is (= [2013 5 13] (meetup/meetup 5 2013 :monday :teenth))))
 
