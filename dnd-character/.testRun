@@ -1,0 +1,17 @@
+---------------------------------------
+Wed Mar 26 21:34:44 GTBST 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing dnd-character-test
+
+Ran 26 tests containing 719 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+5 Seconds 317 Milliseconds
+
+---------------------------------------
