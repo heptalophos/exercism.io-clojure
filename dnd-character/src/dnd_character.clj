@@ -24,5 +24,5 @@
          :charisma  (rand-ability)
          :wisdom    (rand-ability)
          :intelligence (rand-ability)
-         :constitution (rand-ability)
+         :constitution constitution
          :hitpoints (+ (score-modifier constitution) 10)}))
