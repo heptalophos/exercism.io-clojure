@@ -18,6 +18,10 @@
   (testing "can extract row from non-square matrix with no corresponding column"
     (is (= [8 7 6] (matrix/get-row "1 2 3\n4 5 6\n7 8 9\n8 7 6" 4)))))
 
+(deftest get-row_test_5
+  (testing "row not found"
+    (is (= "row not found" (matrix/get-row "89 1903 3\n18 3 1\n9 4 800" 12)))))
+
 (deftest get-column_test_1
   (testing "extract column from one number matrix"
     (is (= [1] (matrix/get-column "1" 1)))))
@@ -33,3 +37,7 @@
 (deftest get-column_test_4
   (testing "extract column where numbers have different widths"
     (is (= [1903 3 4] (matrix/get-column "89 1903 3\n18 3 1\n9 4 800" 2)))))
+
+(deftest get-column_test_5
+  (testing "column not found"
+    (is (= "column not found" (matrix/get-column "89 1903 3\n18 3 1\n9 4 800" 12)))))
