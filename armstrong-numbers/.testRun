@@ -46,3 +46,23 @@ Ran 10 tests containing 10 assertions.
 total time                             
 ---------------------------------------
 3 Seconds 561 Milliseconds
+
+
+
+---------------------------------------
+Mon Apr  7 17:14:45 GTBDT 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing armstrong-numbers-test
+
+Ran 11 tests containing 11 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 403 Milliseconds
+
+---------------------------------------
