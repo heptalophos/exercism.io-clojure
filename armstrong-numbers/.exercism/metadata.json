@@ -1,1 +1,9 @@
-{"track":"clojure","exercise":"armstrong-numbers","id":"7adde5d4176344f5ab1c6134e676accf","url":"https://exercism.org/tracks/clojure/exercises/armstrong-numbers","handle":"heptalophos","is_requester":true,"auto_approve":false}
+{
+    "track": "clojure",
+    "exercise": "armstrong-numbers",
+    "id": "7adde5d4176344f5ab1c6134e676accf",
+    "url": "https://exercism.org/tracks/clojure/exercises/armstrong-numbers/solutions/7adde5d4176344f5ab1c6134e676accf",
+    "handle": "heptalophos",
+    "is_requester": true,
+    "auto_approve": false
+}
