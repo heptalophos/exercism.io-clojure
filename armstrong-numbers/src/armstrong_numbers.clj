@@ -4,6 +4,7 @@
     "Returns the (integer) nth-power of x"
     [x n] 
     (->> x
+         (bigint)
          (repeat n)
          (reduce *)))
 
