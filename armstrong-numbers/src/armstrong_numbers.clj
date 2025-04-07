@@ -9,8 +9,7 @@
          (reduce *)))
 
 (defn armstrong?
-    "Checks if num is an armstrong 
-     (or narcissistic) number"
+    "Checks if num is an armstrong (or narcissistic) number"
     [num]
     (->> num
          (str)
