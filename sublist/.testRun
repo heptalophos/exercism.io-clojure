@@ -48,3 +48,23 @@ total time
 4 Seconds 199 Milliseconds
 
 ---------------------------------------
+
+
+
+---------------------------------------
+Sat Apr  5 05:13:48 GTBDT 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing sublist-test
+
+Ran 18 tests containing 18 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 852 Milliseconds
+
+---------------------------------------

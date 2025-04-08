@@ -1,23 +1,23 @@
 (ns sublist)
 
-(defn- contains-head?
+(defn- front-sublist?
     "Checking recursively equality of heads, returns true if 
-     a list contains another, smaller list at its front."
+     a list contains the other list at its front, false otherwise."
     [[x & xs] [y & ys]]
     (and (or (= x y) (nil? y))
-         (or (nil? ys) (contains-head? xs ys))))
+         (or (nil? ys) (recur xs ys))))
 
 (defn- sublist?
-    "Returns true if first list is sublist of second."
+    "Returns true if first list is sublist of second, nil otherwise."
     [xs ys]
     (let [[p & ps] xs
           [q & qs] ys]
         (or (empty? xs)
-            (and (=  p q) (contains-head? qs ps))
-            (and (seq qs) (sublist? xs qs)))))
+            (and (=  p q) (front-sublist? qs ps))
+            (and (seq qs) (recur xs qs)))))
 
 (defn classify 
-    "Determine the sublistness of first argument against the second."
+    "Determines the sublistness of first argument against the second."
     [xs ys]
     (cond
         (and (sublist? xs ys) (sublist? ys xs)) :equal
