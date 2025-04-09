@@ -10,3 +10,23 @@ lein test perfect-numbers-test
 
 Ran 4 tests containing 4 assertions.
 0 failures, 0 errors.
+
+
+
+---------------------------------------
+Wed Apr  9 12:42:54 GTBDT 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing perfect-numbers-test
+
+Ran 11 tests containing 11 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+4 Seconds 952 Milliseconds
+
+---------------------------------------
