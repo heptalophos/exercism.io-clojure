@@ -10,9 +10,8 @@
     "querenker",
     "ryanplusplus",
     "yurrriq",
-    "tasxatzial",
-    "heptalophos"
-  ],
+    "tasxatzial"
+    ],
   "files": {
     "solution": [
       "src/binary_search.clj"
