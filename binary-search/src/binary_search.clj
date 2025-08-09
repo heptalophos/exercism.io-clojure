@@ -1,19 +1,25 @@
 (ns binary-search)
 
 (defn middle
-  [lst]
-  (int (/ (count lst) 2)))
+  "Calculate the middle index of a range 
+   from low to high (inclusive)."
+  [low high]
+  (+ low (bit-shift-right (- high low) 1)))
 
-(defn search-for 
-  [item lst]
-  (let [mid (middle lst)
-        curr (nth lst mid)]
-  (cond 
-    (= curr item) mid
-    (or 
-      (= mid (count lst)) (zero? mid)) 
-        (throw (Exception. (format "%s not found" item))) ;; (- 0 1)
-      (< curr item) 
-        (+ mid (search-for item (drop mid lst)))
-      (> curr item) 
-        (search-for item (take mid lst)))))
+(defn search-for
+  "Perform binary search to find needle 
+   in sorted vector haystaq.
+   Returns the index of needle if found, -1 if not."
+  ([needle haystaq]
+   (if (zero? (count haystaq))
+     -1
+     (search-for needle haystaq 0 (dec (count haystaq)))))
+  ([needle haystaq low high]
+   (if (> low high)
+     -1
+     (let [midx (middle low high)
+           mid (nth haystaq midx)]
+       (cond
+         (= mid needle) midx
+         (> mid needle) (search-for needle haystaq low (dec midx))
+         (< mid needle) (search-for needle haystaq (inc midx) high))))))
