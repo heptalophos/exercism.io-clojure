@@ -1,9 +1,9 @@
 {
-  "track": "clojure",
-  "exercise": "binary-search",
-  "id": "0dd68edc29a7468b9c0d4a98dbb02ad5",
-  "url": "https://exercism.io/tracks/clojure/exercises/binary-search/solutions/0dd68edc29a7468b9c0d4a98dbb02ad5",
-  "handle": "zerodelta",
-  "is_requester": true,
-  "auto_approve": false
+    "track": "clojure",
+    "exercise": "binary-search",
+    "id": "0dd68edc29a7468b9c0d4a98dbb02ad5",
+    "url": "https://exercism.org/tracks/clojure/exercises/binary-search/solutions/0dd68edc29a7468b9c0d4a98dbb02ad5",
+    "handle": "heptalophos",
+    "is_requester": true,0dd68edc29a7468b9c0d4a98dbb02ad5
+    "auto_approve": false
 }
