@@ -4,7 +4,6 @@
   [lst]
   (int (/ (count lst) 2)))
 
-
 (defn search-for 
   [item lst]
   (let [mid (middle lst)
