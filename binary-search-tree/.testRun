@@ -74,3 +74,23 @@ Ran 9 tests containing 18 assertions.
 total time                             
 ---------------------------------------
 3 Seconds 711 Milliseconds
+
+
+
+---------------------------------------
+Sun Aug 10 18:36:05 GTBDT 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing binary-search-tree-test
+
+Ran 9 tests containing 18 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 402 Milliseconds
+
+---------------------------------------
