@@ -44,3 +44,23 @@ total time
 ---------------------------------------
 3 Seconds 773 Milliseconds
 
+
+
+
+---------------------------------------
+Sun Aug 10 19:01:00 GTBDT 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing allergies-test
+
+Ran 50 tests containing 50 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 777 Milliseconds
+
+---------------------------------------
