@@ -13,13 +13,4 @@
 
 (defn allergic-to? 
   [score allergen]
-  (some (fn [_] (= _ allergen)) (allergies score)))
-
-;;;;;    OR    ;;;;;;;;;;;
-;; (defn allergic-to? 
-;;   [score allergen] 
-;;   (-> allergen
-;;       allergens
-;;       (bit-and score)
-;;       (> 0)))
-;;;;;;;;;;;;;;;;;;;;;;;;;;
+  (boolean (some (fn [_] (= _ allergen)) (allergies score))))
