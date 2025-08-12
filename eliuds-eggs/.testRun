@@ -15,3 +15,23 @@ total time
 3 Seconds 972 Milliseconds
 
 ---------------------------------------
+
+
+
+---------------------------------------
+Tue Aug 12 23:21:01 GTBDT 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing eliuds-eggs-test
+
+Ran 4 tests containing 4 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 951 Milliseconds
+
+---------------------------------------
