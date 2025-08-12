@@ -8,3 +8,8 @@
         (< number 1) 0
         :else (+ (bit-and number 1)
                  (egg-count (bit-shift-right number 1)))))
+    ;; (->> number
+    ;;      (iterate #(bit-shift-right % 1))
+    ;;      (take-while #(> % 0))
+    ;;      (map #(bit-and 1 %))
+    ;;      (apply +)))
