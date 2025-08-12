@@ -48,3 +48,23 @@ Ran 1 tests containing 17 assertions.
 total time                             
 ---------------------------------------
 4 Seconds 19 Milliseconds
+
+
+
+---------------------------------------
+Tue Aug 12 23:19:50 GTBDT 2025
+---------------------------------------
+>clj -X:test
+
+Running tests in #{"test"}
+
+Testing largest-series-product-test
+
+Ran 1 tests containing 17 assertions.
+0 failures, 0 errors.
+
+total time                             
+---------------------------------------
+3 Seconds 313 Milliseconds
+
+---------------------------------------
